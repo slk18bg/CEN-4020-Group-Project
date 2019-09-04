@@ -32,8 +32,9 @@ Eventually I'm thinking we can use this repository to also store our code. We ca
 
 # Best Practices (in order of priority high to low)
  * Please use a pull request to update the Plan.md/ use another branch so we can all approve changes.
+ (I think this may be nice but it may be not be neccesary...)
  * Any ideas for best practices? add them here please, no PR neccecary!
- * Feel free to update the other files..
+ * Feel free to update the other files without PR..
  * Eventually when we are writing  code, it will be nice if each member could rebase their commits before pushing to the github. We don't need to worry about this right now though..
 
 
