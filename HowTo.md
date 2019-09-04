@@ -1,9 +1,9 @@
-##How  To do different things...
+## How  To do different things...
 
-#Markdown
+# Markdown
 https://guides.github.com/features/mastering-markdown/
 
-#Pull Request 
+# Pull Request 
 (clone directory locally method)
 1. Enter into the proper directory. 
 2. type `git branch` and make sure you are on the right branch(skip this step if  you know you are on the right branch).
@@ -20,7 +20,7 @@ https://guides.github.com/features/mastering-markdown/
 
 
 
-#clone directory to local machine
+# clone directory to local machine
 1. make a directory somewhere on your machine to store the folder 
 2. type `git clone https://github.com/Nightsquid7/CEN-4020-Group-Project.git`
 3. move into that directory (cd CEN-4020-Group-Project)
