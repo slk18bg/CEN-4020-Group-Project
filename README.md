@@ -19,4 +19,8 @@ Everyone will need to log with github in here, and we will make sure users all h
 * Steven Berkowitz
 
 # Best Practices
+ Please use a pull request to update the Plan.md/ use another branch so we can all approve changes.
+ 
+ Feel free to update the other files..
+
 
