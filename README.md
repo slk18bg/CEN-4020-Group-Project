@@ -13,9 +13,9 @@ Files so far:
 Plan.md - the master plan for things we need to get done
         - so far this is just a  markdown file. we may eventually want to use 
         a different method to keep track of tasks..
-HowTo.md - A file containing some simple guides to do different project related things..
-README.md - this file
-Game ideas - I know we already have some google docs.. Perhaps we will replace this file with that?
+\nHowTo.md - A file containing some simple guides to do different project related things..
+\nREADME.md - this file
+\nGame ideas - I know we already have some google docs.. Perhaps we will replace this file with that?
 
 Eventually I'm thinking we can use this repository to also store our code. We can create directory for that when the time comes!
 
