@@ -12,4 +12,8 @@ Everyone will need to log with github in here, and we will make sure users all h
 ## Team Members
 #(Please add your name here)
 
-Steven Berkowitz
+*
+*
+*
+*
+* Steven Berkowitz
