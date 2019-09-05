@@ -26,7 +26,7 @@ Eventually I'm thinking we can use this repository to also store our code. We ca
 
 * Daniel Powley
 *
-*
+* Luca Labruna
 * Sheikh Khaled
 * Steven Berkowitz
 
