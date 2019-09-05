@@ -27,7 +27,7 @@ Eventually I'm thinking we can use this repository to also store our code. We ca
 * Daniel Powley
 *
 *
-*
+* Sheikh Khaled
 * Steven Berkowitz
 
 # Best Practices (in order of priority high to low)
