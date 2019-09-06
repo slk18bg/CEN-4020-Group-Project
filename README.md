@@ -22,7 +22,6 @@ Eventually I'm thinking we can use this repository to also store our code. We ca
 
 
 ## Team Members
-#(Please add your name here)
 
 * Daniel Powley
 * Wendy Slattery
