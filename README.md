@@ -33,5 +33,12 @@ Eventually I'm thinking we can use this repository to also store our code. We ca
  * Any ideas for best practices? add them here please, no PR neccecary!
  * Feel free to update the other files without PR..
  * Eventually when we are writing  code, it will be nice if each member could rebase their commits before pushing to the github. We don't need to worry about this right now though..
+ 
+ Some take-aways from my previous group project....
+ 1. Progress in bite sized goals accomplishing those tasks first before building upon them.
+ 2. Double up on duties, yet also diversely (prevents dependency on one person, two heads better than one, and keeps us involved in    broad scope of program so parts mesh better as well as learning more skills)
+ 3. Have a schedule (as Steven suggested) and clear duties distributed, otherwise you won't finish timely.
+ 4. Have goals, but be flexible...always those unforeseen barriers to progress
+ 5. Goal is basic functionality of program as a whole and then add features upon that
 
 
