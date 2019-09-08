@@ -1,6 +1,7 @@
 ## How  To do different things...
 
 # Markdown
+(Markdown isgood for making things look pretty)
 https://guides.github.com/features/mastering-markdown/
 
 # Pull Request 
@@ -8,6 +9,8 @@ https://guides.github.com/features/mastering-markdown/
 1. Enter into the proper directory. 
 2. type `git branch` and make sure you are on the right branch(skip this step if  you know you are on the right branch).
 3. type `git checkout -b <branchName>` - this makes a new branch so that your new commits don't overwrite the current branch.
+      * try to name your branch to match the changes you expect to make for clarity.
+      * the goal is to merge the branch somewhat soon (into master or another branch)
 4. Make the changes to the files that you want to change
 5. (Check modified files) - type `git status`
 6.    a: add the files with `git add <fileName>` or `git add -u` (-u adds multiple files, so do **step 5** to check before commiting)
