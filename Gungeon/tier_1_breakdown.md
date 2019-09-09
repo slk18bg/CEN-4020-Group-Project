@@ -1,22 +1,30 @@
 ## Tier 1: Minimal Basic Construct
 * Map - 6 rooms, doors {}
-* Player - 1 {
-    Player Class Attributes: {
-        * health  {
-            - variables: health
-            - functions: setHealth(),getHealth()
+* Character Class Attributes: {
+  (Character is Base: Player & Enemy subclasses)
+        -health
+        -defense
+        -weapon
+        -movements
+    }   
+
+    *Player - 1 {
+        Player Class Attributes: {
+            * health  {
+                - variables: health
+                - functions: setHealth(),getHealth()
+            }
+            etc..?
         }
-        etc..?
-    }
     
-}
-* Enemy - 1 {
-    Enemy Class Attributes:  {
-        - same as player?
-              - same base class?
-              - What should this class be named?
     }
-}
+    * Enemy - 1 {
+        Enemy Class Attributes:  {
+            - same as player?
+                  - same base class?
+                - What should this class be named?
+        }
+    }
 * Weapon - gun (functions) {
     Weapon Attributes:  {
         * damage  {
@@ -29,4 +37,4 @@
 * Menu - start game, score,  exit, etc {}
 * Storyline - intro, goals  {}
 * Collection - treasure {}
-* Music - background, gun   sound {}
+* Music - background, gun sound {}
