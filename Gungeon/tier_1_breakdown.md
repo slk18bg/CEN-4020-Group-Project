@@ -18,9 +18,9 @@
     
   - **Enemy - 1** 
     * Enemy Class Attributes: (specific to) 
-      - same as player?
+      - same as player? think depends if we code it or do on unity or other framework
         * same base class?
-        * What should this class be named?
+        * What should this class be named? ..npc? enemy seems ok
         
 * **Weapon -** gun (functions) 
    - Weapon Attributes:   
@@ -33,3 +33,4 @@
 * **Storyline -** intro, goals  {}
 * **Collection -** treasure {}
 * **Music -** background, gun sound {}
+maybe we need to add a general object class to derive other objects from (assume we coding it and not using gui) like potions to restore health? armor? weapons ?
