@@ -12,7 +12,7 @@
       1. health  
          - variables: health
          - functions: setHealth(),getHealth()
-      2. defenses?
+      2. defenses? if we doing objects could be armor or shield, if not could be a stat that decides how much your health goes down for hit point
       3. weapon - gun
       4. movements specific to player
     
@@ -27,6 +27,7 @@
      * damage  
       - variables: damage, modifier/random?
       - functions: getDamage()
+      - ammo?
         
 * **Menu -** start game, score,  exit, etc {}
 * **Storyline -** intro, goals  {}
