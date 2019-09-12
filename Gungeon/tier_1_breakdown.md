@@ -33,4 +33,4 @@
 * **Storyline -** intro, goals  {}
 * **Collection -** treasure {}
 * **Music -** background, gun sound {}
-maybe we need to add a general object class to derive other objects from (assume we coding it and not using gui) like potions to restore health? armor? weapons ?
+* **maybe we need to add a general object class to derive other objects from (assume we coding it and not using gui) like potions to restore health? armor? weapons ?
