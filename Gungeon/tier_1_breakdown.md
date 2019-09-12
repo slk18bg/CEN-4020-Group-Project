@@ -32,5 +32,5 @@
 * **Menu -** start game, score,  exit, etc {}
 * **Storyline -** intro, goals  {}
 * **Collection -** treasure {}
-* **Music -** background, gun sound {}
+* **Music -** background, gun sound {} hit/health going down sound?
 * **maybe we need to add a general object class to derive other objects from (assume we coding it and not using gui) like potions to restore health? armor? weapons ?
