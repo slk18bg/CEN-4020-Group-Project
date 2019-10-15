@@ -6,12 +6,12 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    float moveHorizontal;
-    float moveVertical;
-    //public Text countText;
-    //public Text winText;
+
+    Vector2 movement;
+
     private int count;
     Rigidbody2D rb2d;
+    public Animator animator;
 
     void Start()
     {
@@ -23,17 +23,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        moveHorizontal = Input.GetAxisRaw("Horizontal");
-        moveVertical = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate()
     {
 
-        rb2d.velocity = new Vector2(moveHorizontal * speed, moveVertical * speed);
-        //Vector2 movement = new Vector2(moveHorizontal, moveVertical);
-        //transform.Translate(new Vector3(moveHorizontal, moveVertical, 0) * speed * Time.deltaTime);
-        //rb2d.AddForce(movement * speed);
+        rb2d.MovePosition(rb2d.position + movement * speed * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
