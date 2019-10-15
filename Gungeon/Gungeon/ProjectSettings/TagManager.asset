@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 123848653
+    locked: 0
+  - name: Artifacts
+    uniqueID: 1236065577
+    locked: 0
+  - name: Player
+    uniqueID: 2852467203
+    locked: 0
