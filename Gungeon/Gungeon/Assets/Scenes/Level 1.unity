@@ -213,6 +213,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1621111896}
   bulletForce: 20.21
   speed: 1.5
+  cursorTexture: {fileID: 2800000, guid: c6957c42c0b509f4bab47566b4e7e62e, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!114 &118963337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504ea00785a72b64eb8fc09d59c6e736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9.37
+  speed: 6.64
   animator: {fileID: 118963339}
 --- !u!212 &118963338
 SpriteRenderer:
