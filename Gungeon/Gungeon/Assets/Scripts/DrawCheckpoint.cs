@@ -13,7 +13,7 @@ public class DrawCheckpoint : MonoBehaviour
         {
             for (int i = 0; i < checkpoint.Length - 1; i++)
             {
-                Debug.DrawLine(checkpoint[i].transform.position, checkpoint[i + 1].transform.position, Color.red);
+                Debug.DrawLine(checkpoint[i].transform.position, checkpoint[i + 1].transform.position, Color.green);
             }
         }
     }

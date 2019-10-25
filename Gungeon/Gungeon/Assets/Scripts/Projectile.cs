@@ -6,8 +6,8 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public Transform target;
-    public Transform firePoint;  // the position from where object is thrown 
-    public GameObject bullet;    // the object to throw
+    public Transform firePoint;  // shooting origin for bullet  
+    public GameObject bullet;    
     public float strikeTiming = 1f;
 
 
