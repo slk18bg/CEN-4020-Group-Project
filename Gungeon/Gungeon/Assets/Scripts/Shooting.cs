@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour
     public float speed;
 
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         if(Input.GetButtonDown("Fire1"))
         {
@@ -23,6 +23,9 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        Vector2 mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         //rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
