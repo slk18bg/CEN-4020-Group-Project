@@ -9,7 +9,7 @@ public class EnemyGFX : MonoBehaviour
 
     void Update()
     {
-        if(aiPath.desiredVelocity.x <= 0.01f) //if x speed is moving right then icon faces right
+        if (aiPath.desiredVelocity.x <= 0.01f) //if x speed is moving right then icon faces right
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }
