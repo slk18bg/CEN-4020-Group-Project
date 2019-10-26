@@ -16,6 +16,6 @@ public class EnemyGFX : MonoBehaviour
         else if(aiPath.desiredVelocity.x >= -0.01f) //if x speed is moving left, flip enemy facing direction to left
         {
             transform.localScale = new Vector3(1f, 1f, 1f);
-        }
+        }        
     }
 }
