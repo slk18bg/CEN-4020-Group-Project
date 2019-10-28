@@ -463,34 +463,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a33e0325bded1264c82e11fcabb182fe, type: 3}
---- !u!1 &429189305 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8108242598826528129, guid: a33e0325bded1264c82e11fcabb182fe,
-    type: 3}
-  m_PrefabInstance: {fileID: 429189304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &429189306 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8108242598826528255, guid: a33e0325bded1264c82e11fcabb182fe,
     type: 3}
   m_PrefabInstance: {fileID: 429189304}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &429189307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 429189305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 566f67f526bd8d442aedaa632ff35971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTarget: {fileID: 1148477806}
-  firePoint: {fileID: 34718695}
-  bullet: {fileID: 5385312227501419485, guid: 7341aec93fc8a90469dcdfc42e90efc8, type: 3}
-  strikeTiming: 1
 --- !u!1 &493468177
 GameObject:
   m_ObjectHideFlags: 0
