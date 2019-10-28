@@ -5,39 +5,25 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public Transform target;
-    public Transform firePoint;  // shooting origin for bullet  
-    public GameObject bullet;    
-    public float strikeTiming = 1f;
+    [SerializeField]
+    private Transform weaponTip;
+
+    [SerializeField]
+    private Transform bullet;
+
+    private Transform playerTarget;
+    private Vector2 directionToFire;
+    private float angleToFire;
 
 
-    void Start()
+    void Update()
     {
-        Throw();
-    }
+        directionToFire = Camera.main.ScreenToWorldPoint(playerTarget) - transform.position;
+        angleToFire = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angleToFire - 90f);
 
-    void Throw()
-    {
+        //set to fire after certain time delay or at waypoints
 
-        float xDistance;
-        xDistance = target.position.x - firePoint.position.x;
-
-        float yDistance;
-        yDistance = target.position.y - firePoint.position.y;
-
-        float fireAngle; // in radians
-        fireAngle = Mathf.Atan((yDistance + 4.905f * (strikeTiming * strikeTiming)) / xDistance); //using math from Jesse Mason's video toolbox method
-        float totalVelocity = xDistance / (Mathf.Cos(fireAngle) * strikeTiming);
-
-        float xVelocity, yVelocity;
-        xVelocity = totalVelocity * Mathf.Cos(fireAngle);
-        yVelocity = totalVelocity * Mathf.Sin(fireAngle);
-
-        GameObject bulletInstance = Instantiate(bullet, firePoint.position, Quaternion.Euler(new Vector3(0, 0, 0))) as GameObject;
-        Rigidbody2D rigidBody;
-        rigidBody = bulletInstance.GetComponent<Rigidbody2D>();
-
-        rigidBody.velocity = new Vector2(xVelocity, yVelocity);
     }
 }
 
