@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5385312227501419490}
   - component: {fileID: 5385312227501419488}
   - component: {fileID: 50684045541910796}
-  - component: {fileID: 114997330319805996}
+  - component: {fileID: 114191086628053904}
   m_Layer: 0
   m_Name: Fire Bullet
   m_TagString: Untagged
@@ -119,7 +119,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &114997330319805996
+--- !u!114 &114191086628053904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,8 +128,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5385312227501419485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 390a2f99fc96ad948bb9058a037404f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 09162412982248349b335f32edc222f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
+  damage: 40
   rigidBody: {fileID: 50684045541910796}

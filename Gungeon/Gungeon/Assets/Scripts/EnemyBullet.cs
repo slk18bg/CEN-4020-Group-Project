@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireBullet : MonoBehaviour
+public class EnemyBullet : MonoBehaviour
 {
     public float speed = 20f;
     public int damage = 40;
@@ -23,5 +23,5 @@ public class FireBullet : MonoBehaviour
         }
         Destroy(gameObject);
     }
-    
+
 }
