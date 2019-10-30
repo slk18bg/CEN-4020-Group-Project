@@ -32,6 +32,7 @@ public class PlayerPickups : MonoBehaviour
     {
         if (collision.CompareTag("Coin"))
         {
+            //Destroy(collision.gameObject);
             collision.gameObject.SetActive(false);
             ++money;
             SetMoneyText();
