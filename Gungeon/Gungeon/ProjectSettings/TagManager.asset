@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Coin
+  - Gem
+  - Potion
   - Enemy
   layers:
   - Default
