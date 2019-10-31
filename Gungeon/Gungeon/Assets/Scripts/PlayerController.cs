@@ -6,12 +6,20 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public float bulletBaseSpeed = 1.0f;
 
     Vector2 movement;
 
     private int count;
     Rigidbody2D rb2d;
     public Animator animator;
+    public Vector3 mousePos;
+    public GameObject crosshair;
+
+    public bool endOfAiming;
+    public bool isAiming;
+
+    public GameObject bulletPrefab;
 
     void Start()
     {
@@ -29,6 +37,13 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        mousePos = Input.mousePosition;
+        endOfAiming = Input.GetButtonUp("Fire1");
+        isAiming = Input.GetButton("Fire1");
+
+        Aim();
+        Shoot();
     }
 
     private void FixedUpdate()
@@ -47,10 +62,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-   /* private void SetCountText()
+    void Aim()
     {
-        countText.text = "Count: " + count.ToString();
-        if (count >= 5)
-            winText.text = "You Win!";
-    }*/
+        if (movement != Vector2.zero)
+        {
+            crosshair.transform.localPosition = mousePos;
+        }
+    }
+
+    void Shoot()
+    {
+        Vector2 shootDirection = crosshair.transform.localPosition;
+        shootDirection.Normalize();
+
+        if(endOfAiming)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletBaseSpeed;
+            bullet.transform.Rotate(0, 0, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg);
+            Destroy(bullet, 2.0f);
+        }
+    }
 }
