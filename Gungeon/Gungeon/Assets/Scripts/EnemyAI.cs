@@ -92,11 +92,12 @@ public class EnemyAI : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
+        
         else
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-
+        
         if (pathFollowing == null)
         {
             return;
