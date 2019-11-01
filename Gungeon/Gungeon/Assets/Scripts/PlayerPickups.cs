@@ -18,7 +18,7 @@ public class PlayerPickups : MonoBehaviour
     void Start()
     {
         money = 0;
-        health = 4;
+        health = 3;
         SetMoneyText();
         SetHealthText();
     }
