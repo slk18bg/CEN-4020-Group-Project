@@ -18,7 +18,7 @@ public class PlayerPickups : MonoBehaviour
     void Start()
     {
         money = 0;
-        health = 4;
+        health = 3;
         SetMoneyText();
         SetHealthText();
     }
@@ -31,7 +31,10 @@ public class PlayerPickups : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Coin"))
+
         {
+            Debug.Log("Inside player script pick up coin");
+            //SoundManagerScript.PlaySound("CoinPickUp");
             //Destroy(collision.gameObject);
             collision.gameObject.SetActive(false);
             ++money;
@@ -57,13 +60,13 @@ public class PlayerPickups : MonoBehaviour
 
     private void SetMoneyText()
     {
-        moneyText.text = "Money: " + money.ToString();
+        moneyText.text = money.ToString();
         // maybe calling some method here for future stuff
     }
 
     private void SetHealthText()
     {
-        healthText.text = "Health: " + health.ToString();
+        healthText.text = health.ToString();
 
     }
 }
