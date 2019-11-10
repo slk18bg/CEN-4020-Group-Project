@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    public float bulletBaseSpeed = 1.0f;
+    //public float bulletBaseSpeed = 1.0f;
 
     Vector2 movement;
 
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public bool endOfAiming;
     public bool isAiming;
 
-    public GameObject bulletPrefab;
+    //public GameObject bulletPrefab;
 
     void Start()
     {
@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
         Vector2 shootDirection = crosshair.transform.localPosition;
         shootDirection.Normalize();
 
+        /*
         if(endOfAiming)
         {
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
@@ -82,5 +83,6 @@ public class PlayerController : MonoBehaviour
             bullet.transform.Rotate(0, 0, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg);
             Destroy(bullet, 2.0f);
         }
+        */
     }
 }

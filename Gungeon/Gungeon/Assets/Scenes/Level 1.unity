@@ -1058,15 +1058,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6.64
-  bulletBaseSpeed: 1
+  bulletBaseSpeed: 0
   animator: {fileID: 1148477807}
   mousePos: {x: 0, y: 0, z: 0}
   crosshair: {fileID: 9170599224835110692, guid: 9fbaab32810589e47a29f65195a39b56,
     type: 3}
   endOfAiming: 0
   isAiming: 0
-  bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
-    type: 3}
+  bulletPrefab: {fileID: 0}
 --- !u!114 &1148477810
 MonoBehaviour:
   m_ObjectHideFlags: 0
