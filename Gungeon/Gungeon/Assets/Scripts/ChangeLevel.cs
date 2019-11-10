@@ -15,7 +15,7 @@ void OnTriggerEnter2D(Collider2D col)
     {
       
         Debug.Log("Entered trigger");
-        Application.LoadLevel(level);
+        SceneManager.LoadScene(level);
     }
 }
 }
