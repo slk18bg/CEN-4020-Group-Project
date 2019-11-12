@@ -15,20 +15,26 @@
      
 Your working directory is the directory you are working in. Once you make a change to any file, you should see those changes in the staging area  ->  you know this when you run git status:
 There are three things you want to look for:
- #1 Changes to be committed:
+ -  #1 
+ ```
+ Changes to be committed:
  (use "git reset HEAD <file>..." to unstage)
 
  modified: hello.py
+ ```
 
- #2 Changes not staged for commit:
+ -  #2
+ ```
+ Changes not staged for commit:
  (use "git add <file>..." to update what will be committed)
  (use "git checkout -- <file>..." to discard changes in working directory)
 
  modified: main.py
-
- #3 Untracked files:
+```
+ -  #3
+ ```Untracked files:
  (use "git add <file>..." to include in what will be committed)
-
+```
 All changes you've made that you want to commit should be under the "Changes to Be Committed" section.
 If something that you have changed is in the "Change Is Not Staged for Commit" section,
       -> if you want that change to be committed you *must* add that file using git add
