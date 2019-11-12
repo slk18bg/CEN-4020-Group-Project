@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 114191086628053904}
   m_Layer: 0
   m_Name: Fire Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,3 +134,4 @@ MonoBehaviour:
   speed: 5
   damage: 40
   rigidBody: {fileID: 50684045541910796}
+  hitEffect: {fileID: 0}

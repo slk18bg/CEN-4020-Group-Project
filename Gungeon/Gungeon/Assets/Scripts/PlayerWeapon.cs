@@ -7,13 +7,17 @@ public class PlayerWeapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
-
-    public Vector2 mousePos;
-    public Camera cam;
+    //public GameObject gun;
 
     void Update()
     {
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        
+        // use this code for hand or gun to angle to target
+
+        Vector2 lookDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        float lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f,0f,lookAngle);
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -27,11 +31,7 @@ public class PlayerWeapon : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
-        // use this code for hand or gun to angle to target
-        //GameObject gun = GetComponent<Rigidbody2D>();
-        Vector2 lookDirection = mousePos - rb.position;
-        float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
-        rb.rotation = angle;
+        
 
 
 
