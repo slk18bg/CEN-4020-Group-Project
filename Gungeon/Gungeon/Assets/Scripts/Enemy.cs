@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
-
+    
     public GameObject deathReaction;
 
     public void TakeDamage(int damage)
@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Die()
+    private void Die()
     {
         Instantiate(deathReaction, transform.position, Quaternion.identity);
         Destroy(gameObject);
