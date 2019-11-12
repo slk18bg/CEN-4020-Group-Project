@@ -37,11 +37,13 @@ There are three things you want to look for:
 ```
 All changes you've made that you want to commit should be under the "Changes to Be Committed" section.
 If something that you have changed is in the "Change Is Not Staged for Commit" section,
-      -> if you want that change to be committed you *must* add that file using git add
-      git add main.py
+      -> if you want that change to be committed you should add that file using git add
+      ```git add main.py```
       
  Then, once you are satisfied that all your changes are in the 'staging area', you can commit them:
+ ```
  git commit -m "I changed the files hello.py and main.py and am commiting them"
+ ```
  (You don't need to use the '-m' argument, but I think that it's more convenient -w without it you have to enter the commit message separately.
  
  # Branches
