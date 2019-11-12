@@ -67,6 +67,18 @@ If you want some practice, Try cloning this repository using the instructions ab
 10. After someone has reviewed the changes click 'merge' and you're done!
 
 
+# Resolving Merge Conflicts
+(after you have tried to merge/commit and are getting a warning saying there are conflicts...)
+1. type git status
+2. open the files that have "Unmerged paths" in your editor of choice. 
+```
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   Assets/Scenes/Intro.unity - (this is the file that you are interested in, often this can be multiple files...)
+  ```
+3. Fix the merge conflict - https://images.app.goo.gl/Be1uxH9MHv3uXXh59 - you need to choose which changes you will keep.
+VSCode has nice plug ins that can help, it should prompt you to download them automatically.
 
 # Markdown
 (Markdown isgood for making things look pretty)
