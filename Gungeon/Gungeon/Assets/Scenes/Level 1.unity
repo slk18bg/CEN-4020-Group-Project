@@ -340,12 +340,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc544b9da8b1f8246ba2bfb6af81d7f6, type: 3}
+--- !u!1 &644553308 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9221748958181557821, guid: 5a493929fbab564469f6ae7775746a3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 9221748958387448153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &644553309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9221748958181557820, guid: 5a493929fbab564469f6ae7775746a3e,
     type: 3}
   m_PrefabInstance: {fileID: 9221748958387448153}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &644553310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644553308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d229cbdbc67cd5848a0889d2b984e6f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 644553309}
+  bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
+    type: 3}
+  bulletForce: 20
 --- !u!114 &753019163 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 164626607579385736, guid: 822ec2a5cedb0584cbe95fe6dae1069c,
@@ -984,28 +1006,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb0b32cab934027409b6722e1501dc60, type: 3}
---- !u!1 &1488552964 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9221748958565883245, guid: 5a493929fbab564469f6ae7775746a3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 9221748958387448153}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1488552967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1488552964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d229cbdbc67cd5848a0889d2b984e6f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 644553309}
-  bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
-    type: 3}
-  bulletForce: 20
 --- !u!224 &1588334516 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7231834473182705175, guid: eb0b32cab934027409b6722e1501dc60,
@@ -5072,17 +5072,27 @@ PrefabInstance:
     - target: {fileID: 9221748958181557820, guid: 5a493929fbab564469f6ae7775746a3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.707
+      value: 0.756
       objectReference: {fileID: 0}
     - target: {fileID: 9221748958181557820, guid: 5a493929fbab564469f6ae7775746a3e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.005
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 9221748958565883247, guid: 5a493929fbab564469f6ae7775746a3e,
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221748958565883247, guid: 5a493929fbab564469f6ae7775746a3e,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221748958565883247, guid: 5a493929fbab564469f6ae7775746a3e,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9221748959535908908, guid: 5a493929fbab564469f6ae7775746a3e, type: 3}
