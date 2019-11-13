@@ -5,8 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
-    
+    public GameObject gemPrefab;
     public GameObject deathReaction;
+    
 
     public void TakeDamage(int damage)
     {
@@ -22,5 +23,6 @@ public class Enemy : MonoBehaviour
     {
         //Instantiate(deathReaction, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        GameObject gemdrop = Instantiate(gemPrefab, transform.position, transform.rotation);
     }
 }
