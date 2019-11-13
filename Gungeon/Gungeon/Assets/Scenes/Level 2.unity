@@ -5102,6 +5102,8 @@ GameObject:
   - component: {fileID: 1567253919}
   - component: {fileID: 1567253918}
   - component: {fileID: 1567253917}
+  - component: {fileID: 1567253921}
+  - component: {fileID: 1567253920}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5153,7 +5155,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -5173,6 +5175,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1567253920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567253916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5970879d52c55de49b400abf976de311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1907849745}
+--- !u!114 &1567253921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567253916}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 128
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_UpscaleRT: 0
+  m_PixelSnapping: 1
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!4 &1706018782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3426161497312551656, guid: 7928a43cc52afd546aa6b6f2d66ee350,
@@ -5295,6 +5330,12 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 1706018782}
+    - target: {fileID: 4083251555014476923, guid: 2cc61598e31e5804d89a7bbfbba06447,
+        type: 3}
+      propertyPath: gemPrefab
+      value: 
+      objectReference: {fileID: 2078073053661834648, guid: 5c76ccaf8def50b4980751be23002496,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cc61598e31e5804d89a7bbfbba06447, type: 3}
 --- !u!1001 &1907849744
@@ -5386,6 +5427,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7928a43cc52afd546aa6b6f2d66ee350, type: 3}
+--- !u!1 &1907849745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3424364076858857896, guid: 7928a43cc52afd546aa6b6f2d66ee350,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907849744}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2000480351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5463,5 +5510,11 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 1706018782}
+    - target: {fileID: 300080897193420814, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: gemPrefab
+      value: 
+      objectReference: {fileID: 1539421191370779546, guid: 1ee0305adab64d14196d79c80e82e231,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}

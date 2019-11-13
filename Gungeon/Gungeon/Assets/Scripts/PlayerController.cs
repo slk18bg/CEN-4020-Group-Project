@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
         mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
         
-        endOfAiming = Input.GetButtonUp("Fire1");
+        //endOfAiming = Input.GetButtonUp("Fire1");
         isAiming = Input.GetButton("Fire1");
 
         Aim();
