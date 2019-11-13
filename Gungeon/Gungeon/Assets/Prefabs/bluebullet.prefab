@@ -144,3 +144,4 @@ MonoBehaviour:
   speed: 15
   damage: 10
   rigidBody: {fileID: 7323304380907347298}
+  hitEffect: {fileID: 0}
