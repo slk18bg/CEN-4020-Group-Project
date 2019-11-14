@@ -4459,6 +4459,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8940814427941103450}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1712894719390042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712894719390041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa88681ec57f494ebefd2b0dbd9cb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4493260867357209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
@@ -4542,11 +4554,6 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 4493260867357209}
-    - target: {fileID: 300080896204797119, guid: 8036aca3b0144b44880896d1dfc6eda8,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun
-      objectReference: {fileID: 0}
     - target: {fileID: 300080897193420814, guid: 8036aca3b0144b44880896d1dfc6eda8,
         type: 3}
       propertyPath: gemPrefab
@@ -4557,6 +4564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maxSpeed
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 300080896204797119, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
@@ -4722,11 +4734,6 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 29477901}
-    - target: {fileID: 9027436496565220485, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ae2be967709a07145905f1cfabc13186, type: 2}
     - target: {fileID: 8940814428692110751, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -4737,6 +4744,11 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9027436496565220485, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ae2be967709a07145905f1cfabc13186, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea56ac14f9a83d42b04a4c066450d65, type: 3}
 --- !u!1001 &9092247540588698780
@@ -4864,6 +4876,11 @@ PrefabInstance:
     - target: {fileID: 9092247540067464435, guid: 9f29fd5a7797771499e8aeeda33f140a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092247540067464435, guid: 9f29fd5a7797771499e8aeeda33f140a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9092247540577697287, guid: 9f29fd5a7797771499e8aeeda33f140a,
