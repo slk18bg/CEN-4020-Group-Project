@@ -21,6 +21,7 @@ public class PlayerPickups : MonoBehaviour
         health = 3;
         SetMoneyText();
         SetHealthText();
+        //GameObject.Find("Player").GetComponent<Player>().health = 3; 
     }
 
     // Update is called once per frame
