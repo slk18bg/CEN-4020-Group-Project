@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 mousePos;
     public GameObject crosshair;
 
-    public bool endOfAiming;
+    //public bool endOfAiming;
     public bool isAiming;
 
     public Camera camera;
