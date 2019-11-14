@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 3556757852676475628}
   - component: {fileID: 300080895807441208}
   m_Layer: 0
-  m_Name: EnemyLesserC
+  m_Name: EnemyLesser
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 1.5
+  maxSpeed: 2
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -396,4 +396,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gemPrefab: {fileID: 0}
   deathReaction: {fileID: 0}

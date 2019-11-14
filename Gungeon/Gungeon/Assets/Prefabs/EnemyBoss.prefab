@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4083251554074462906}
   - component: {fileID: 4083251554074462904}
   m_Layer: 0
-  m_Name: EnemyBossB
+  m_Name: EnemyBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,6 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 4083251555014476903}
-  - {fileID: 4083251555735191598}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -125,7 +124,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4083251555735191598}
   m_Father: {fileID: 4083251555928468339}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  gemPrefab: {fileID: 0}
   deathReaction: {fileID: 0}
 --- !u!1 &4083251555735191599
 GameObject:
@@ -339,9 +340,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4083251555735191599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.856, y: 0.386, z: 0}
-  m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 1}
+  m_LocalPosition: {x: 0.8560001, y: 0.38600004, z: 0}
+  m_LocalScale: {x: 0.8333332, y: 0.8333332, z: 1}
   m_Children: []
-  m_Father: {fileID: 4083251555928468339}
-  m_RootOrder: 1
+  m_Father: {fileID: 4083251555014476903}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
