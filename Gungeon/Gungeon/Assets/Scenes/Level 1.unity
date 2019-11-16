@@ -4554,6 +4554,11 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 4493260867357209}
+    - target: {fileID: 300080896204797119, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: m_Name
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 300080897193420814, guid: 8036aca3b0144b44880896d1dfc6eda8,
         type: 3}
       propertyPath: gemPrefab
@@ -4564,11 +4569,6 @@ PrefabInstance:
         type: 3}
       propertyPath: maxSpeed
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 300080896204797119, guid: 8036aca3b0144b44880896d1dfc6eda8,
-        type: 3}
-      propertyPath: m_Name
-      value: Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
@@ -4719,6 +4719,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8980293859216820267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: camera
@@ -4734,6 +4739,11 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 29477901}
+    - target: {fileID: 9027436496565220485, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ae2be967709a07145905f1cfabc13186, type: 2}
     - target: {fileID: 8940814428692110751, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -4744,11 +4754,6 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9027436496565220485, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: ae2be967709a07145905f1cfabc13186, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea56ac14f9a83d42b04a4c066450d65, type: 3}
 --- !u!1001 &9092247540588698780
