@@ -182,13 +182,28 @@ PrefabInstance:
     - target: {fileID: 3205230487205444572, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.18
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 3205230487205444572, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.18
+      value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 5096098206027476014, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
+        type: 3}
+      propertyPath: revolver
+      value: 
+      objectReference: {fileID: 522756060}
+    - target: {fileID: 5096098206027476014, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
+        type: 3}
+      propertyPath: rayGun
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096098206027476014, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 522756060}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e, type: 3}
 --- !u!1001 &38449408
@@ -571,6 +586,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2078073054285544150, guid: 5c76ccaf8def50b4980751be23002496,
     type: 3}
   m_PrefabInstance: {fileID: 348106790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &522756060 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3205230487205444546, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 31115006}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &781773838
 GameObject:
