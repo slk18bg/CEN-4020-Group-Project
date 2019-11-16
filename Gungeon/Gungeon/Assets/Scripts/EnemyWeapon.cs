@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,17 +8,23 @@ public class EnemyWeapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public float fireRate;
+    public float rateOfFire = 3f;
+    public float fireDelay = 3f;
+    float fireRate;
     float nextFire;
 
     private void Start()
     {
-        fireRate = 3f;
+        fireRate = rateOfFire;
         nextFire = Time.time;
+        DelayStartFire();
     }
+
+    
 
     void Update()
     {
+
         CheckIfTimeToFire();
 
         /*
@@ -26,6 +33,11 @@ public class EnemyWeapon : MonoBehaviour
             Shoot();
         }
         */
+    }
+
+    private void DelayStartFire()
+    {
+        nextFire = nextFire + fireDelay;
     }
 
     void CheckIfTimeToFire()
