@@ -133,6 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 5
   damage: 40
-  rigidBody: {fileID: 50684045541910796}
-  moveDirection: {x: 0, y: 0}
+  bulletRB: {fileID: 50684045541910796}
+  bulletDirection: {x: 0, y: 0}
   hitEffect: {fileID: 0}

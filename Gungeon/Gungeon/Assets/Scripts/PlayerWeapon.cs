@@ -7,7 +7,6 @@ public class PlayerWeapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce = 20f;
-    //public GameObject gun;
     public Animator revolver; //luca added
     public Animator rayGun; //luca added
     void Update()
@@ -33,8 +32,8 @@ public class PlayerWeapon : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
+        bulletRB.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
         revolver.SetTrigger("Shoot");
 

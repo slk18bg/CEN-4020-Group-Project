@@ -102,7 +102,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &3341913215487332877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143,6 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 10
   damage: 10
-  rigidBody: {fileID: 7323304380907347298}
-  moveDirection: {x: 0, y: 0}
+  bulletRB: {fileID: 7323304380907347298}
+  bulletDirection: {x: 0, y: 0}
   hitEffect: {fileID: 0}
