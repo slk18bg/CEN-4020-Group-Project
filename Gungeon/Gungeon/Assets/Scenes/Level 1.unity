@@ -394,6 +394,29 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8940814427941103450}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &942055216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6425811518411102856, guid: fbfcdda6e953f504a845059e043b6593,
+    type: 3}
+  m_PrefabInstance: {fileID: 1251415885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &942055219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942055216}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d229cbdbc67cd5848a0889d2b984e6f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1107013969}
+  bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
+    type: 3}
+  bulletForce: 20
+  weapon: {fileID: 454802634}
 --- !u!1 &1034317344
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +537,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!4 &1107013969 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7273126022520813215, guid: fbfcdda6e953f504a845059e043b6593,
+    type: 3}
+  m_PrefabInstance: {fileID: 1251415885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1160602531
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,6 +704,16 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 454802634}
+    - target: {fileID: 1444381547895701588, guid: fbfcdda6e953f504a845059e043b6593,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425811518411102858, guid: fbfcdda6e953f504a845059e043b6593,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfcdda6e953f504a845059e043b6593, type: 3}
 --- !u!1001 &1301614616

@@ -14,10 +14,9 @@ public class PlayerController : MonoBehaviour
     public Vector2 mousePos;
     public GameObject crosshair;
 
-    //public bool endOfAiming;
     public bool isAiming;
 
-    public Camera camera;
+    public Camera cam;
 
     
 
@@ -37,9 +36,8 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         
-        //endOfAiming = Input.GetButtonUp("Fire1");
         isAiming = Input.GetButton("Fire1");
 
         Aim();
@@ -49,10 +47,8 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
 
-        rb2d.MovePosition(rb2d.position + movement * speed * Time.fixedDeltaTime);
+        rb2d.MovePosition(rb2d.position + movement * speed * Time.fixedDeltaTime);     
                 
-        
-        
         // ensure that player is facing mouse aim
         if (rb2d.transform.position.x > mousePos.x)
         {
@@ -82,23 +78,5 @@ public class PlayerController : MonoBehaviour
             crosshair.transform.localPosition = mousePos;
         }
     }
-    /*
-    void Shoot()
-    {
-
-        Vector2 shootDirection = crosshair.transform.localPosition;
-        shootDirection.Normalize();
-
-        
-        if (endOfAiming)
-        {
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletBaseSpeed;
-            bullet.transform.Rotate(0, 0, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg);
-            Destroy(bullet, 2.0f);
-            
-        }
-        
-    }
-    */
+    
 }
