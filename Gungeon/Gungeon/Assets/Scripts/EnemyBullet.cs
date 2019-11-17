@@ -6,8 +6,8 @@ public class EnemyBullet : MonoBehaviour
 {
     public float bulletSpeed = 10f;
     public int damage = 10;
-    public Rigidbody2D rigidBody;
-    public Vector2 moveDirection;
+    public Rigidbody2D bulletRB;
+    public Vector2 bulletDirection;
     Player target;
 
     public GameObject hitEffect;
@@ -15,8 +15,8 @@ public class EnemyBullet : MonoBehaviour
     void Start()
     {
         target = GameObject.FindObjectOfType<Player>();
-        moveDirection = (target.transform.position - transform.position).normalized * bulletSpeed;
-        rigidBody.velocity = new Vector2(moveDirection.x, moveDirection.y);
+        bulletDirection = (target.transform.position - transform.position).normalized * bulletSpeed;
+        bulletRB.velocity = new Vector2(bulletDirection.x, bulletDirection.y);
         Destroy(gameObject, 3f);
         
         //rigidBody.velocity = transform.right * bulletSpeed;
