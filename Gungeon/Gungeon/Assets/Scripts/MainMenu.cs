@@ -15,4 +15,14 @@ public class MainMenu : MonoBehaviour
         // add a pop up text box later that asks if you're sure you want to quit
         Application.Quit();
     }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
+    public void Back() // go back to intro scene
+    {
+        SceneManager.LoadScene("Intro");
+    }
 }

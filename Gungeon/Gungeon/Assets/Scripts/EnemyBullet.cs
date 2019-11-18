@@ -8,6 +8,8 @@ public class EnemyBullet : MonoBehaviour
     public int damage = 40;
     public Rigidbody2D rigidBody;
 
+    public GameObject hitEffect;
+
     void Start()
     {
         rigidBody.velocity = transform.right * speed;
@@ -19,8 +21,16 @@ public class EnemyBullet : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+        //Destroy(effect, 5f);
+        //Destroy(gameObject, 2f);
     }
 
 }
