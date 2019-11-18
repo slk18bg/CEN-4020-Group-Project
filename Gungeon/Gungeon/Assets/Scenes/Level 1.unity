@@ -407,7 +407,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942055216}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d229cbdbc67cd5848a0889d2b984e6f8, type: 3}
   m_Name: 
@@ -637,12 +637,12 @@ PrefabInstance:
     - target: {fileID: 6425811518411102869, guid: fbfcdda6e953f504a845059e043b6593,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.092
+      value: 0.082
       objectReference: {fileID: 0}
     - target: {fileID: 6425811518411102869, guid: fbfcdda6e953f504a845059e043b6593,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.017
+      value: -0.041
       objectReference: {fileID: 0}
     - target: {fileID: 6425811518411102869, guid: fbfcdda6e953f504a845059e043b6593,
         type: 3}
@@ -707,12 +707,12 @@ PrefabInstance:
     - target: {fileID: 1444381547895701588, guid: fbfcdda6e953f504a845059e043b6593,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6425811518411102858, guid: fbfcdda6e953f504a845059e043b6593,
         type: 3}
       propertyPath: m_SpriteSortPoint
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfcdda6e953f504a845059e043b6593, type: 3}
@@ -4694,6 +4694,11 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 1715352555}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1715352555}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -4723,6 +4728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8940814428952692264, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: health
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea56ac14f9a83d42b04a4c066450d65, type: 3}

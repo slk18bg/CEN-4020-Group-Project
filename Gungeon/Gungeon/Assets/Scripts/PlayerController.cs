@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
 
     private int count;
-    Rigidbody2D rb2d;
+    Rigidbody2D playerRB;
     public Animator animator;
     public Vector2 mousePos;
     public GameObject crosshair;
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        playerRB = GetComponent<Rigidbody2D>();
         count = 0;
         
     }
@@ -47,18 +47,17 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
 
-        rb2d.MovePosition(rb2d.position + movement * speed * Time.fixedDeltaTime);     
+        playerRB.MovePosition(playerRB.position + movement * speed * Time.fixedDeltaTime);     
                 
         // ensure that player is facing mouse aim
-        if (rb2d.transform.position.x > mousePos.x)
+        if (playerRB.transform.position.x > mousePos.x)
         {
-            rb2d.transform.rotation = Quaternion.Euler(0, 180, 0);
+            playerRB.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else
         {
-            rb2d.transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        
+            playerRB.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -66,8 +65,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("PickUp"))
         {
             collision.gameObject.SetActive(false);
-            count++;
-            //SetCountText();
+            count++;            
         }
     }
 
