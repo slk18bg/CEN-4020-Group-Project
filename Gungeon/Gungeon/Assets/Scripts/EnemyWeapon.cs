@@ -24,15 +24,7 @@ public class EnemyWeapon : MonoBehaviour
 
     void Update()
     {
-
-        CheckIfTimeToFire();
-
-        /*
-        if (Input.GetButtonDown("Fire2"))
-        {
-            Shoot();
-        }
-        */
+        CheckIfTimeToFire();        
     }
 
     private void DelayStartFire()
@@ -47,12 +39,5 @@ public class EnemyWeapon : MonoBehaviour
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             nextFire = Time.time + fireRate;
         }
-    }
-
-    /*
-    void Shoot()
-    {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-    }
-    */
+    }    
 }

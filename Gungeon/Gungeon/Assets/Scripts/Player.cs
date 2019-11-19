@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public int health = 100;
 
-    public GameObject deathReaction;
+    //public GameObject deathReaction;
 
     public void TakeDamage (int damage)
     {
