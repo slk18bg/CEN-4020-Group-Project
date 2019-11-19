@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 //using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -23,13 +24,15 @@ public class PlayerController : MonoBehaviour
     public float bulletForce = 20f;
     public Animator weapon;
 
-
+    public AudioClip Shoot1Sound;
+    AudioSource audioSource;
 
     void Start()
     {
         playerRB = GetComponent<Rigidbody2D>();
         count = 0;
         
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -107,7 +110,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("PickUp"))
         {
             collision.gameObject.SetActive(false);
-            count++;            
+            count++;        
         }
     }
 
@@ -127,7 +130,7 @@ public class PlayerController : MonoBehaviour
 
         //revolver.SetTrigger("Shoot");
         weapon.SetTrigger("Shoot");
-
+        audioSource.PlayOneShot(Shoot1Sound, 0.7F);
     }
 
 }
