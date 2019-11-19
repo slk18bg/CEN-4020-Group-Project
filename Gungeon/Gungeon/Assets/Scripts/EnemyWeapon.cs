@@ -7,6 +7,7 @@ public class EnemyWeapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public Animator enemyWeapon;
 
     public float rateOfFire = 3f;
     public float fireDelay = 3f;
@@ -46,6 +47,7 @@ public class EnemyWeapon : MonoBehaviour
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             nextFire = Time.time + fireRate;
+            enemyWeapon.SetTrigger("WaterShoot");
         }
     }
 

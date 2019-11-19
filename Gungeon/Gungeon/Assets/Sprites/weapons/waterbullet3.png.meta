@@ -1,12 +1,13 @@
 fileFormatVersion: 2
-guid: fa4e4154ce7c195408ef68216be6bbc1
+guid: ab361e1402029c54dae72c3bef3a956f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: gunnormsecondvers_0
-    21300002: gunnormsecondvers_1
-    21300004: gunnormsecondvers_2
-    21300006: gunnormsecondvers_3
-    21300008: gunnormsecondvers_4
+    21300000: waterbullet3_0
+    21300002: waterbullet3_1
+    21300004: waterbullet3_2
+    21300006: waterbullet3_3
+    21300008: waterbullet3_4
+    21300010: waterbullet3_5
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -89,7 +90,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gunnormsecondvers_0
+      name: waterbullet3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -103,13 +104,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f29b1decbdf3214ab6fd040e3f69ccf
+      spriteID: 84f0c56d76d7ed2428837425b3992da4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gunnormsecondvers_1
+      name: waterbullet3_1
       rect:
         serializedVersion: 2
         x: 128
@@ -123,13 +124,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cac1ccbefaeb744386577faf64dda79
+      spriteID: 820aacc8e589b444180af9c8111e5e48
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gunnormsecondvers_2
+      name: waterbullet3_2
       rect:
         serializedVersion: 2
         x: 0
@@ -143,13 +144,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d3f9f2dcf5df5e429af0ec79bd97601
+      spriteID: 68d250e90033b2c48b01b35198151123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gunnormsecondvers_3
+      name: waterbullet3_3
       rect:
         serializedVersion: 2
         x: 128
@@ -163,13 +164,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6261b9b4a178af4c865cb97e42eebb6
+      spriteID: 5b27c4b23be1a7f47a5b6e5981b1a03d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gunnormsecondvers_4
+      name: waterbullet3_4
       rect:
         serializedVersion: 2
         x: 0
@@ -183,7 +184,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb44a074a23881c41b4b51a09675ba1e
+      spriteID: 544b64fca8374e8409f8904d17bc1f2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterbullet3_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63029fc9880179041bf580e5d002e445
       vertices: []
       indices: 
       edges: []
@@ -191,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4f6ac1054634fab489999f43ebc1aa41
+    spriteID: 6da43e20e7586a64d870704ca504cfa9
     vertices: []
     indices: 
     edges: []
