@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
         {
             Die();
         }
+
     }
 
     void Die ()

@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
-    public float speed = 20f;
-    public int damage = 40;
-    public Rigidbody2D rigidBody;
+    public float bulletSpeed = 10f;
+    public int damage = 10;
+    public Rigidbody2D bulletRB;
+    public Vector2 bulletDirection;
+    Player target;
 
     public GameObject hitEffect;
 
     void Start()
     {
-        rigidBody.velocity = transform.right * speed;
+        target = GameObject.FindObjectOfType<Player>();
+        bulletDirection = (target.transform.position - transform.position).normalized * bulletSpeed;
+        bulletRB.velocity = new Vector2(bulletDirection.x, bulletDirection.y);
+        Destroy(gameObject, 3f);
+        
+        //rigidBody.velocity = transform.right * bulletSpeed;
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)

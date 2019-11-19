@@ -157,7 +157,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: be3d8965634523e498e911e692bd2458, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &8993066262248732003
 BoxCollider2D:
@@ -269,7 +269,6 @@ MonoBehaviour:
   mousePos: {x: 0, y: 0}
   crosshair: {fileID: 9170599224835110692, guid: 9fbaab32810589e47a29f65195a39b56,
     type: 3}
-  endOfAiming: 0
   isAiming: 0
   camera: {fileID: 0}
 --- !u!114 &8940814428952692264

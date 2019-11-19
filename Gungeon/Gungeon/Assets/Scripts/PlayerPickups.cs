@@ -14,6 +14,9 @@ public class PlayerPickups : MonoBehaviour
     public Text moneyText;
     public Text healthText;
 
+    public AudioClip PickupSound;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,8 @@ public class PlayerPickups : MonoBehaviour
         SetMoneyText();
         SetHealthText();
         //GameObject.Find("Player").GetComponent<Player>().health = 3; 
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,6 +46,7 @@ public class PlayerPickups : MonoBehaviour
             //++money;
             ++PlayerStats.money;
             SetMoneyText();
+            audioSource.PlayOneShot(PickupSound, 0.7F);
         }
         else if (collision.CompareTag("Gem"))
         {
@@ -48,6 +54,7 @@ public class PlayerPickups : MonoBehaviour
             //money += 10;
             PlayerStats.money += 10;
             SetMoneyText();
+            audioSource.PlayOneShot(PickupSound, 0.7F);
         }
         else if (collision.CompareTag("Potion"))
         {
@@ -57,6 +64,7 @@ public class PlayerPickups : MonoBehaviour
                 //++health;
                 ++PlayerStats.health;
                 SetHealthText();
+                audioSource.PlayOneShot(PickupSound, 0.7F);
             }
 
         }

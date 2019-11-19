@@ -47,8 +47,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
     type: 3}
   bulletForce: 20
-  revolver: {fileID: 6425811518411102859}
-  rayGun: {fileID: 0}
+  weapon: {fileID: 0}
 --- !u!1 &6425811518411102856
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +74,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6425811518411102856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.092, y: -0.017, z: 0}
+  m_LocalPosition: {x: 0.0854, y: -0.0153, z: 0}
   m_LocalScale: {x: 0.18, y: 0.18, z: 1}
   m_Children:
   - {fileID: 7273126022520813215}
@@ -129,7 +128,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &6425811518411102859
 Animator:
   serializedVersion: 3

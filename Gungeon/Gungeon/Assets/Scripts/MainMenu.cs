@@ -10,10 +10,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void QuitGame()
+    public void Options()
     {
-        // add a pop up text box later that asks if you're sure you want to quit
-        Application.Quit();
+        SceneManager.LoadScene("Options");
     }
 
     public void Instructions()
@@ -21,8 +20,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Instructions");
     }
 
-    public void Back() // go back to intro scene
+    public void Back() // "back" buton on Instructions page; go back to intro scene, also used for "back" button on Options menu
     {
         SceneManager.LoadScene("Intro");
+    }
+
+    public void QuitGame()
+    {
+        // add a pop up text box later that asks if you're sure you want to quit
+        Application.Quit();
     }
 }
