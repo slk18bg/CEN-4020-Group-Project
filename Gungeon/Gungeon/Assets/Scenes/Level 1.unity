@@ -273,7 +273,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748052092}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: db3c506cb74da404f94c6036cd39cbcf, type: 3}
@@ -412,12 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d229cbdbc67cd5848a0889d2b984e6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 1107013969}
-  bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
-    type: 3}
-  bulletForce: 20
-  mousePos: {x: 0, y: 0, z: 0}
-  weapon: {fileID: 454802634}
 --- !u!1 &1034317344
 GameObject:
   m_ObjectHideFlags: 0
