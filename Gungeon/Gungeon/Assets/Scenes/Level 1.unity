@@ -273,7 +273,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748052092}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: db3c506cb74da404f94c6036cd39cbcf, type: 3}
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942055216}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d229cbdbc67cd5848a0889d2b984e6f8, type: 3}
   m_Name: 
@@ -416,6 +416,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
     type: 3}
   bulletForce: 20
+  mousePos: {x: 0, y: 0, z: 0}
   weapon: {fileID: 454802634}
 --- !u!1 &1034317344
 GameObject:
@@ -4441,6 +4442,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aa88681ec57f494ebefd2b0dbd9cb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1712894719390046 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8940814428952692277, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 8940814427941103450}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4493260867357209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
@@ -4699,6 +4706,27 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1715352555}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1712894719390046}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 1107013969}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
+        type: 3}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 454802634}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -4732,7 +4760,7 @@ PrefabInstance:
     - target: {fileID: 8940814428952692264, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: health
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea56ac14f9a83d42b04a4c066450d65, type: 3}

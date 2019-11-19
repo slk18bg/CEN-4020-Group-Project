@@ -204,8 +204,19 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 522756060}
+    - target: {fileID: 5096098206027476014, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e, type: 3}
+--- !u!4 &31115007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8809870995508515491, guid: a6e3fdcaa9f8d3b49a9c43cbfb290f3e,
+    type: 3}
+  m_PrefabInstance: {fileID: 31115006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &38449408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,6 +483,32 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 781773840}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 781773840}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 31115007}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
+        type: 3}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 522756060}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 199346364}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -509,6 +546,12 @@ Transform:
 --- !u!1 &199346363 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8940263754635187715, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 199346360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &199346364 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8940814428952692277, guid: cea56ac14f9a83d42b04a4c066450d65,
     type: 3}
   m_PrefabInstance: {fileID: 199346360}
   m_PrefabAsset: {fileID: 0}

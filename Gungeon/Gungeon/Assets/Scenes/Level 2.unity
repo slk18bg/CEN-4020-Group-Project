@@ -5481,8 +5481,25 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.18
       objectReference: {fileID: 0}
+    - target: {fileID: 1444381547895701588, guid: fbfcdda6e953f504a845059e043b6593,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbfcdda6e953f504a845059e043b6593, type: 3}
+--- !u!4 &941566208 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7273126022520813215, guid: fbfcdda6e953f504a845059e043b6593,
+    type: 3}
+  m_PrefabInstance: {fileID: 941566207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &941566209 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6425811518411102859, guid: fbfcdda6e953f504a845059e043b6593,
+    type: 3}
+  m_PrefabInstance: {fileID: 941566207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1082991144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5705,6 +5722,32 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 1567253918}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1567253918}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 941566208}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
+        type: 3}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 941566209}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1259476186}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -5752,6 +5795,12 @@ Transform:
 --- !u!1 &1259476185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8940263754635187715, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 1259476182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1259476186 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8940814428952692277, guid: cea56ac14f9a83d42b04a4c066450d65,
     type: 3}
   m_PrefabInstance: {fileID: 1259476182}
   m_PrefabAsset: {fileID: 0}
