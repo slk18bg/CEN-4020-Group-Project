@@ -17,9 +17,8 @@ public class EnemyBullet : MonoBehaviour
         target = GameObject.FindObjectOfType<Player>();
         bulletDirection = (target.transform.position - transform.position).normalized * bulletSpeed;
         bulletRB.velocity = new Vector2(bulletDirection.x, bulletDirection.y);
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 3f);        
         
-        //rigidBody.velocity = transform.right * bulletSpeed;
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -31,13 +30,6 @@ public class EnemyBullet : MonoBehaviour
             Destroy(gameObject);
         }
         
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        //Destroy(effect, 5f);
-        //Destroy(gameObject, 2f);
-    }
+    }  
 
 }
