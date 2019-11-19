@@ -16,11 +16,12 @@ public class Player : MonoBehaviour
         {
             Die();
         }
+
     }
 
     void Die ()
     {
-        Instantiate(deathReaction, transform.position, Quaternion.identity);
+        //Instantiate(deathReaction, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

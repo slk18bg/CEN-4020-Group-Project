@@ -6,12 +6,12 @@ public class PlayerBullet : MonoBehaviour
 {
     public float speed = 20f;
     public int damage = 40;
-    public Rigidbody2D rigidBody;
+    public Rigidbody2D bulletRB;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody.velocity = transform.right * speed;
+        bulletRB.velocity = transform.right * speed;
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -20,8 +20,10 @@ public class PlayerBullet : MonoBehaviour
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
+                
     }
 
 }

@@ -5,28 +5,31 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // movements
     public float speed;
-    public float bulletBaseSpeed = 1.0f;
-
     Vector2 movement;
-
+    Rigidbody2D playerRB;       
+    public Animator playerAnimator;
     private int count;
-    Rigidbody2D rb2d;
-    public Animator animator;
-    public Vector3 mousePos;
+
+    // mouse aim
+    public Vector2 mousePos;
     public GameObject crosshair;
+    public Camera cam;
 
-    public bool endOfAiming;
-    public bool isAiming;
-
+    // weapon
+    public Transform firePoint;
     public GameObject bulletPrefab;
+    public float bulletForce = 20f;
+    public Animator weapon;
+
+
 
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        playerRB = GetComponent<Rigidbody2D>();
         count = 0;
-        //winText.text = "";
-        //SetCountText();
+        
     }
 
     void Update()
@@ -34,22 +37,69 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        playerAnimator.SetFloat("Horizontal", movement.x);
+        playerAnimator.SetFloat("Vertical", movement.y);
+        playerAnimator.SetFloat("Speed", movement.sqrMagnitude);
 
-        mousePos = Input.mousePosition;
-        endOfAiming = Input.GetButtonUp("Fire1");
-        isAiming = Input.GetButton("Fire1");
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);        
+        SetCrosshairToMouse();
 
-        Aim();
-        Shoot();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+
     }
 
     private void FixedUpdate()
     {
+        playerRB.MovePosition(playerRB.position + movement * speed * Time.fixedDeltaTime);
+        Vector2 lookDirection = mousePos - playerRB.position;
+        float lookAngle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
 
-        rb2d.MovePosition(rb2d.position + movement * speed * Time.fixedDeltaTime);
+        // ensure that player is facing mouse aim
+        // Left Facing: Fip Player 
+        if (playerRB.transform.position.x > mousePos.x) 
+        {
+            playerRB.transform.rotation = Quaternion.Euler(0, 180, 0); // turn left facing
+
+            if (lookAngle > 90 && lookAngle <= 180) //TL Quadrant 2
+            {
+                lookAngle = lookAngle - 180;
+                if (lookAngle < -50)
+                {
+                    lookAngle = -50f;
+                }                
+                weapon.transform.rotation = Quaternion.Euler(0f, 180f, -lookAngle);
+            }
+            
+            if (lookAngle < -90 && lookAngle >= -180) // BL Quadrant 3
+            {
+                lookAngle = lookAngle + 180;
+                if (lookAngle > 50)
+                {
+                    lookAngle = 50f;
+                }
+                weapon.transform.rotation = Quaternion.Euler(0f, 180f, -lookAngle);
+            }                          
+        }
+        else
+        {
+            // Right Facing: mouse to right of player
+            playerRB.transform.rotation = Quaternion.Euler(0, 0, 0); // keep right facing
+            
+            // limit fire range
+            if (lookAngle > 50)  // TR Quadrant 1
+            {
+                lookAngle = 50f;
+            }
+            if (lookAngle < -50)  // BR Quadrant 4
+            {
+                lookAngle = -50f;
+            }
+            // aim weapon at mouse
+            weapon.transform.rotation = Quaternion.Euler(0f, 0f, lookAngle);
+        }        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,12 +107,11 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("PickUp"))
         {
             collision.gameObject.SetActive(false);
-            count++;
-            //SetCountText();
+            count++;            
         }
     }
 
-    void Aim()
+    void SetCrosshairToMouse()
     {
         if (movement != Vector2.zero)
         {
@@ -72,15 +121,13 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        Vector2 shootDirection = crosshair.transform.localPosition;
-        shootDirection.Normalize();
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
+        bulletRB.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
-        if(endOfAiming)
-        {
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody2D>().velocity = shootDirection * bulletBaseSpeed;
-            bullet.transform.Rotate(0, 0, Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg);
-            Destroy(bullet, 2.0f);
-        }
+        //revolver.SetTrigger("Shoot");
+        weapon.SetTrigger("Shoot");
+
     }
+
 }

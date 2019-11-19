@@ -7,8 +7,8 @@ public class PlayerPickups : MonoBehaviour
 {
 
     // objects variables
-    private int money;
-    private int health;
+   // private int money;
+    // private int health;
 
     // text for testing till graphic UI implemented
     public Text moneyText;
@@ -17,10 +17,11 @@ public class PlayerPickups : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        money = 0;
-        health = 3;
+        //PlayerStats.money = 0;
+        //PlayerStats.health = 3;
         SetMoneyText();
         SetHealthText();
+        //GameObject.Find("Player").GetComponent<Player>().health = 3; 
     }
 
     // Update is called once per frame
@@ -37,21 +38,24 @@ public class PlayerPickups : MonoBehaviour
             //SoundManagerScript.PlaySound("CoinPickUp");
             //Destroy(collision.gameObject);
             collision.gameObject.SetActive(false);
-            ++money;
+            //++money;
+            ++PlayerStats.money;
             SetMoneyText();
         }
         else if (collision.CompareTag("Gem"))
         {
             collision.gameObject.SetActive(false);
-            money += 10;
+            //money += 10;
+            PlayerStats.money += 10;
             SetMoneyText();
         }
         else if (collision.CompareTag("Potion"))
         {
-            if (health >= 0 && health < 4)
+            if (PlayerStats.health >= 0 && PlayerStats.health < 4)
             {
                 collision.gameObject.SetActive(false);
-                ++health;
+                //++health;
+                ++PlayerStats.health;
                 SetHealthText();
             }
 
@@ -60,13 +64,13 @@ public class PlayerPickups : MonoBehaviour
 
     private void SetMoneyText()
     {
-        moneyText.text = money.ToString();
+        moneyText.text = PlayerStats.money.ToString();
         // maybe calling some method here for future stuff
     }
 
     private void SetHealthText()
     {
-        healthText.text = health.ToString();
+        healthText.text = PlayerStats.health.ToString();
 
     }
 }
