@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("PickUp"))
         {
             collision.gameObject.SetActive(false);
-            count++;            
+            count++;        
         }
     }
 
