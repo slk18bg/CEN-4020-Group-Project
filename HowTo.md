@@ -15,27 +15,35 @@
      
 Your working directory is the directory you are working in. Once you make a change to any file, you should see those changes in the staging area  ->  you know this when you run git status:
 There are three things you want to look for:
- #1 Changes to be committed:
+ -  #1 
+ ```
+ Changes to be committed:
  (use "git reset HEAD <file>..." to unstage)
 
  modified: hello.py
+ ```
 
- #2 Changes not staged for commit:
+ -  #2
+ ```
+ Changes not staged for commit:
  (use "git add <file>..." to update what will be committed)
  (use "git checkout -- <file>..." to discard changes in working directory)
 
  modified: main.py
-
- #3 Untracked files:
+```
+ -  #3
+ ```Untracked files:
  (use "git add <file>..." to include in what will be committed)
-
+```
 All changes you've made that you want to commit should be under the "Changes to Be Committed" section.
 If something that you have changed is in the "Change Is Not Staged for Commit" section,
-      -> if you want that change to be committed you *must* add that file using git add
-      git add main.py
+      -> if you want that change to be committed you should add that file using git add
+      ```git add main.py```
       
  Then, once you are satisfied that all your changes are in the 'staging area', you can commit them:
+ ```
  git commit -m "I changed the files hello.py and main.py and am commiting them"
+ ```
  (You don't need to use the '-m' argument, but I think that it's more convenient -w without it you have to enter the commit message separately.
  
  # Branches
@@ -67,6 +75,18 @@ If you want some practice, Try cloning this repository using the instructions ab
 10. After someone has reviewed the changes click 'merge' and you're done!
 
 
+# Resolving Merge Conflicts
+(after you have tried to merge/commit and are getting a warning saying there are conflicts...)
+1. type git status
+2. open the files that have "Unmerged paths" in your editor of choice. 
+```
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   Assets/Scenes/Intro.unity - (this is the file that you are interested in, often this can be multiple files...)
+  ```
+3. Fix the merge conflict - https://images.app.goo.gl/Be1uxH9MHv3uXXh59 - you need to choose which changes you will keep.
+VSCode has nice plug ins that can help, it should prompt you to download them automatically.
 
 # Markdown
 (Markdown isgood for making things look pretty)

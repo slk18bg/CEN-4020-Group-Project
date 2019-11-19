@@ -87,6 +87,7 @@ public class EnemyAI : MonoBehaviour
             }
             return;
         }
+        
         // make sure enemy is always facing player
         if (transform.position.x > targetPlayer.position.x)
         {
