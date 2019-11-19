@@ -280,7 +280,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -412,12 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d229cbdbc67cd5848a0889d2b984e6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 1107013969}
-  bulletPrefab: {fileID: 4362413436549065082, guid: 567179c7cdfb1104f98f02203c6a96b3,
-    type: 3}
-  bulletForce: 20
-  mousePos: {x: 0, y: 0, z: 0}
-  weapon: {fileID: 454802634}
 --- !u!1 &1034317344
 GameObject:
   m_ObjectHideFlags: 0
