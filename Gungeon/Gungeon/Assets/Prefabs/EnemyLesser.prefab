@@ -191,7 +191,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 2
+  maxSpeed: 1.8
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -204,7 +204,7 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 0.6
   pickNextWaypointDist: 1.2
-  endReachedDistance: 2
+  endReachedDistance: 3
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -238,6 +238,8 @@ MonoBehaviour:
   firePoint: {fileID: 300080896284007129}
   bulletPrefab: {fileID: 3061835426385311979, guid: 559f4f638a3e3d7408d6260e389cef94,
     type: 3}
+  rateOfFire: 3
+  fireDelay: 2
 --- !u!1 &3556757853640612157
 GameObject:
   m_ObjectHideFlags: 0
