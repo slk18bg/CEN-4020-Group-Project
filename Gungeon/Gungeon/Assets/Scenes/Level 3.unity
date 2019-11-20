@@ -324,6 +324,47 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 781773840}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 781773840}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 31115007}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 3066195651486153780, guid: ccb1c78dfa8856641af128dbd0fdfa68,
+        type: 3}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 522756060}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 199346364}
+    - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: moneyText
+      value: 
+      objectReference: {fileID: 1284300227}
+    - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 1284300228}
     - target: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -379,47 +420,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: camera
-      value: 
-      objectReference: {fileID: 781773840}
-    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 781773840}
-    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 31115007}
-    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 3066195651486153780, guid: ccb1c78dfa8856641af128dbd0fdfa68,
-        type: 3}
-    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: weapon
-      value: 
-      objectReference: {fileID: 522756060}
-    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: playerAnimator
-      value: 
-      objectReference: {fileID: 199346364}
-    - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: moneyText
-      value: 
-      objectReference: {fileID: 1284300227}
-    - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: healthText
-      value: 
-      objectReference: {fileID: 1284300228}
     - target: {fileID: 8940814428692110751, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_Sprite
@@ -784,8 +784,19 @@ PrefabInstance:
       propertyPath: endReachedDistance
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: enemyWeapon
+      value: 
+      objectReference: {fileID: 1055862115}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
+--- !u!95 &1055862115 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1393507249514940763, guid: 8036aca3b0144b44880896d1dfc6eda8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1055862114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1134622618
 GameObject:
   m_ObjectHideFlags: 0

@@ -178,7 +178,7 @@ Transform:
   m_Children:
   - {fileID: 1759275452}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &445582824
 PrefabInstance:
@@ -746,7 +746,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1715352557
 MonoBehaviour:
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5970879d52c55de49b400abf976de311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2129696642414164738}
 --- !u!1 &1759275451
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,12 +4403,12 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2129696642414164736}
     - target: {fileID: 3556757853640612144, guid: 8036aca3b0144b44880896d1dfc6eda8,
         type: 3}
       propertyPath: targetPlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2129696642414164736}
     - target: {fileID: 300080897193420814, guid: 8036aca3b0144b44880896d1dfc6eda8,
         type: 3}
       propertyPath: gemPrefab
@@ -4470,6 +4470,11 @@ PrefabInstance:
       propertyPath: Shoot1Sound
       value: 
       objectReference: {fileID: 8300000, guid: f354226f6cc7f4545a3779c9e83b8d06, type: 3}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 2129696642414164737}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -4565,11 +4570,34 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: ae2be967709a07145905f1cfabc13186, type: 2}
+    - target: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea56ac14f9a83d42b04a4c066450d65, type: 3}
 --- !u!4 &2129696642414164735 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8940814428692110750, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 2129696642414164734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2129696642414164736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 2129696642414164734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2129696642414164737 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8940814428952692277, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 2129696642414164734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2129696642414164738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8940263754635187715, guid: cea56ac14f9a83d42b04a4c066450d65,
     type: 3}
   m_PrefabInstance: {fileID: 2129696642414164734}
   m_PrefabAsset: {fileID: 0}
@@ -4644,7 +4672,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetPlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2129696642414164736}
     - target: {fileID: 4083251555014476923, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
       propertyPath: gemPrefab
