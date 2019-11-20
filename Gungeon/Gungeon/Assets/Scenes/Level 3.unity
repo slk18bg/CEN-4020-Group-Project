@@ -355,6 +355,11 @@ PrefabInstance:
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 199346364}
+    - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: Shoot1Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 608ef2e2002514c12beafa495f785cb5, type: 3}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -365,6 +370,11 @@ PrefabInstance:
       propertyPath: healthText
       value: 
       objectReference: {fileID: 1284300228}
+    - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: PickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c5b0a3c2164eb4d4e86e85aa5a028416, type: 3}
     - target: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5798,7 +5808,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.7462492, y: 9.3}
+  m_Offset: {x: 2.7462502, y: 9.27801}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5809,7 +5819,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 34.462357, y: 8.469999}
+  m_Size: {x: 34.462357, y: 8.513979}
   m_EdgeRadius: 0
 --- !u!61 &1561474672
 BoxCollider2D:
