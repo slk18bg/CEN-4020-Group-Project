@@ -1,15 +1,12 @@
 fileFormatVersion: 2
-guid: 13c9d6c89817de047a2eda5e8f4abb27
+guid: 50bd2a2a1253441418b61776d441bf54
 TextureImporter:
   fileIDToRecycleName:
-    21300000: guns2lightfinal_0
-    21300002: guns2lightfinal_1
-    21300004: guns2lightfinal_2
-    21300006: guns2lightfinal_3
-    21300008: guns2lightfinal_4
-    21300010: guns2lightfinal_5
-    21300012: guns2lightfinal_6
-    21300014: guns2lightfinal_7
+    21300000: watergun1final_0
+    21300002: watergun1final_1
+    21300004: watergun1final_2
+    21300006: watergun1final_3
+    21300008: watergun1final_4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -92,7 +89,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: guns2lightfinal_0
+      name: watergun1final_0
       rect:
         serializedVersion: 2
         x: 0
@@ -106,13 +103,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14aef98e57428bc4a9370b6b8ebef7a6
+      spriteID: e205e446c3ae981408433dacb997188b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guns2lightfinal_1
+      name: watergun1final_1
       rect:
         serializedVersion: 2
         x: 128
@@ -126,33 +123,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f57e1a3c148567845a48d402b3499ed0
+      spriteID: bd427ec4f6f13db4bbaac0c09699c508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guns2lightfinal_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3b53bb2787b76449b2c3891e30765e4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guns2lightfinal_3
+      name: watergun1final_2
       rect:
         serializedVersion: 2
         x: 0
@@ -166,13 +143,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5905aa15368f18418961112e6e2a11e
+      spriteID: d8e895e2933f0a547b9968379bb4d753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guns2lightfinal_4
+      name: watergun1final_3
       rect:
         serializedVersion: 2
         x: 128
@@ -186,33 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84fa7e6259fec9c4897160895a8d8437
+      spriteID: 9fca3c8aa1dfb2a468a05ef8293a7ba8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: guns2lightfinal_5
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16423a0c46ddf2449a32369e0dea8312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guns2lightfinal_6
+      name: watergun1final_4
       rect:
         serializedVersion: 2
         x: 0
@@ -226,27 +183,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efa0ce10481bb914489791d97a1e9174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: guns2lightfinal_7
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25a47705b302a2844b986512ac65b65a
+      spriteID: df8c7e6773f2bf14d82c5790e1aeb377
       vertices: []
       indices: 
       edges: []
@@ -254,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ad8eb45a53892b44182fc3bbaa6d7274
+    spriteID: 6a5b77f91da8dd648988e10827f188ba
     vertices: []
     indices: 
     edges: []
