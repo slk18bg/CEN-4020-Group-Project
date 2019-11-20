@@ -916,7 +916,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.03, y: -5.81}
+  m_Offset: {x: -2.03, y: -5.848606}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -927,7 +927,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.83, y: 3.66}
+  m_Size: {x: 1.8299999, y: 3.5827875}
   m_EdgeRadius: 0
 --- !u!61 &1759275457
 BoxCollider2D:
@@ -994,7 +994,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.82, y: -7.1}
+  m_Offset: {x: -7.0989165, y: -7.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1005,7 +1005,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 6.03}
+  m_Size: {x: 4.0578337, y: 6.0299997}
   m_EdgeRadius: 0
 --- !u!61 &1759275460
 BoxCollider2D:
@@ -1020,7 +1020,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.064124, y: -4.492062}
+  m_Offset: {x: -7.064124, y: -4.481032}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1031,7 +1031,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.9917507, y: 0.91587543}
+  m_Size: {x: 3.9917507, y: 0.9379358}
   m_EdgeRadius: 0
 --- !u!61 &1759275461
 BoxCollider2D:
@@ -1046,7 +1046,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.1463118, y: -4.48}
+  m_Offset: {x: 3.1463118, y: -5.504289}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1057,7 +1057,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.177378, y: 0.8999996}
+  m_Size: {x: 12.177378, y: 2.9926796}
   m_EdgeRadius: 0
 --- !u!61 &1759275462
 BoxCollider2D:
@@ -1098,7 +1098,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8.58, y: 0.2}
+  m_Offset: {x: 8.750523, y: 0.19999981}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1109,7 +1109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.05, y: 10.47}
+  m_Size: {x: 1.3910446, y: 10.47}
   m_EdgeRadius: 0
 --- !u!61 &1759275464
 BoxCollider2D:
@@ -1124,7 +1124,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.5, y: 0.2}
+  m_Offset: {x: -8.567076, y: 0.19999981}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1135,7 +1135,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.29, y: 10.47}
+  m_Size: {x: 1.1558495, y: 10.47}
   m_EdgeRadius: 0
 --- !u!483693784 &1759275465
 TilemapRenderer:
@@ -4245,7 +4245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+umh7p/bgIAABYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWRwEDorXUI6YEkE9rJxRfFXmMNsuSR5ADJ8N+7km3sUl8sv/16+3blLyKUrSB12myMyLY6A/J9RPyZfBv1xkc48b1WO/EJnc+byFzhnXjweeVOaMSZD7O6BGdE+kPtpXemCNZK5NqU62wPsbbOIpxzaQFNRjsfrRD6GpETvsYrH3LG03TpT594WtHRBY8pKAdm4Eon0znFZzWP2hg6oSv/LNrIxSSKFjMWrccsCjlqlUpeVpD5hvpUbNkmYHQyD44Km219EPLVtZTCtlyJO1dBi5hXtsZO0SETHHsPBNlkhkABYl8438kw/DnPLbhWGsPP98KgiE1e8lM3ypbcHhp2H1zWvtKcTQOvJun2P/uYBXNudPnY1WXU13CFSA+v/Jxy6wbSD+H7AfUg0pHLA3+X8FaAetIbo2uVodGZ2ofWFqb3/ee1tbiA9NDjDdUbsK561btJd3P2PVxC96dYivI9aB81wE7qoHhYDzA4nV9IOCyPbVMg6ln8sfCb74db1hoehLEOTW2XytN717XxrmQdNPPd1C7WRkGAW9IVKC7d+QXTuNsR3tgGZW8sD9zfp7Z4a+uuyU1IgHt/Sm9ML/p4HZYt9HELtniunRQKetLe8IQ6xVqpZsOGmnRhu9rkPB2E7WuR/bta5I6v7uiSURblwFk0HS9WKUSz+WLOsxkwTknYPaGwTy5fGqKtPDg11SdXuGfdb2a0MbwK254ZftyIz1IPJBcq17vUAKjnJsOVOBgsgjczW2cCBdqBc0KFeZOvhEidHiBLromS0On65AxP+iwJqcSHdh5JSBz+Kwm5kMtfUEsDBBQAAAgIAACYn+u0U/vebAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0rPQUVBKL0osyCgGChiCOKWZKSB2tJJFoqWFgbmhgaFJWmqioYmRrpllcqqJsamZaWKKcaphooFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJif66aHun9uAgAAFgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif67RT+95sAAAAdwAAAAkAJAAAAAAAAAAAAAAAuwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAByAwAAAAA=
+    dataString: UEsDBBQAAAgIAACYn+uOCmv3cQIAABYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1zmzAQ/SsenWsP2PiD3lriOD04zsTt5MJFQYvRWEiMJGI7Gf/3rgQY6nJBvP16+3bFF+HSVJBZpTeas61iQL6PiDuTb6Pe+ARnelByzz+h83njzBbOiXqfV2q5Qjx0YUaVYDXPfsiDcM4BgrXkudLlmh0gUcYahHMqDKBJK+uiJUJfI3LG1zh2IRc8TZfu9ImnOBhd8ZiBtKAHrsFkOg/wiedRGzOeThZRjM9q0caOo0kcLmer9ThY+iy1zAQtK2CupT5ZuGxThAvvJrHZ1iOYzF11JQQ3LVdiL5XXIqGVqbFTdGCcYu+eYDiZIVAAPxTWdTIM3+W5AdtKo+nlgWsUsclLfqpG2ZKaY8Ptg4raVZqHU8+rSbr9zz4OvTnXqnzq6oaBq2ELnh1f6SWjxg6kH8IPA+peohMVR/ou4K0A+aw2WtWSodHq2oXWBqYP/eettaSA7NjjDdU7sK56zbtJd3N2PVx99+dE8PLdax81wF4or7hfD9A4nV9I2C+PaVMg6lj8MfCbHoZb1hoeuTYWTW2X0tF7V7V2rmTtNXPd1DZRWoKHW9IVSCrs5QXT2PsR3tkGZe8sj9Tdp7Z4a+uuyV2Ih3v/ILgzvajTbVimUKctmGJXW8El9KSd4Rl1SpSUzYYNNenC9rXOaTYIO9Sc/btaZEXjVbAMgzDKgYbRdLyIM4hm88WcshmENCB+97jEPql4aYi28uDUZJ9c4p51v5nRRtPKbzvT9LThn6UaSM5lrvaZBpC7JsONOGgsgjeTrRlHgfZgLZd+3uQrJUJlR2DpLVHqO12fraZpnyUlFf9Q1iEpSfx/JSVXcv0LUEsDBBQAAAgIAACYn+u0U/vebAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0rPQUVBKL0osyCgGChiCOKWZKSB2tJJFoqWFgbmhgaFJWmqioYmRrpllcqqJsamZaWKKcaphooFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJif644Ka/dxAgAAFgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif67RT+95sAAAAdwAAAAkAJAAAAAAAAAAAAAAAvgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAAB1AwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
