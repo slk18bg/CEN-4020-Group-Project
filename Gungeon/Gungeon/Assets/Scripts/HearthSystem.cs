@@ -5,9 +5,11 @@ using UnityEngine.UI;
 public class HearthSystem : MonoBehaviour
 {
     private int maxHearthAmount = 5;
-    public int startHearths = 3;
-    public int curHealth;
-    private int maxHealth;
+    public int startHearths = 4;
+    // each hearth is 3 integers, maximum of 5 hearths, 4 enabled at the moment
+    public int curHealth = 0;
+    //private int curHealth = 0;
+    //private int maxHealth;
     private int healthPerHearth = 3;
 
     public Image[] healthImages;
@@ -15,11 +17,18 @@ public class HearthSystem : MonoBehaviour
 
     void Start()
     {
-        curHealth = startHearths * healthPerHearth;
-        maxHealth = maxHearthAmount * healthPerHearth;
+        curHealth = PlayerStats.health;
+        //curHealth = startHearths * healthPerHearth;
+        //maxHealth = maxHearthAmount * healthPerHearth;
+        //AddHearthContainer();
         checkHealthAmount();
     }
-
+    /*
+    private void Update()
+    {
+        curHealth = PlayerStats.health;
+    }
+    */
     void checkHealthAmount()
     {
         for (int i = 0; i < maxHearthAmount; i++)
@@ -67,10 +76,11 @@ public class HearthSystem : MonoBehaviour
     }
 
 
-    public void TakeDamage(int amount)
+    public void ChangeHealth(int amount)
     {
         curHealth += amount;
         curHealth = Mathf.Clamp(curHealth, 0, startHearths * healthPerHearth);
+        PlayerStats.health = curHealth;
         UpdateHearths ();
     }
 
