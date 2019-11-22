@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class PlayerPickups : MonoBehaviour
 {
 
-    // objects variables
+    //objects variables
     //private ref int Money = PlayerStats.money;
-   //private int health;
+    //private int health;
 
-    // text for testing till graphic UI implemented
+    //text for testing till graphic UI implemented
     public Text moneyText;
-    public Text healthText;
+    //public Text healthText;
 
     public AudioClip PickupSound;
     AudioSource audioSource;
@@ -23,7 +23,7 @@ public class PlayerPickups : MonoBehaviour
         //PlayerStats.money = 0;
         //PlayerStats.health = 3;
         SetMoneyText();
-        SetHealthText();
+        //SetHealthText();
         //GameObject.Find("Player").GetComponent<Player>().health = 3; 
 
         audioSource = GetComponent<AudioSource>();
@@ -54,11 +54,13 @@ public class PlayerPickups : MonoBehaviour
         {
             if (PlayerStats.health >= 0 && PlayerStats.health < PlayerStats.maxHealth)
             {
+                
                 GameObject.Find("Player").GetComponent<HearthSystem>().ChangeHealth(3);
                 collision.gameObject.SetActive(false);
                 //++PlayerStats.health;
-                SetHealthText();
+                //SetHealthText();
                 audioSource.PlayOneShot(PickupSound, 0.7F);
+
             }
 
         }
@@ -67,12 +69,13 @@ public class PlayerPickups : MonoBehaviour
     private void SetMoneyText()
     {
         moneyText.text = PlayerStats.money.ToString();
-        // maybe calling some method here for future stuff
     }
 
+    /*
     private void SetHealthText()
     {
         healthText.text = PlayerStats.health.ToString();
 
     }
+    */
 }

@@ -4826,7 +4826,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Shoot1Sound
       value: 
-      objectReference: {fileID: 8300000, guid: f354226f6cc7f4545a3779c9e83b8d06, type: 3}
+      objectReference: {fileID: 8300000, guid: abb3d0a23825e44d8a3fce4f81241c78, type: 3}
     - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: playerAnimator
@@ -4931,6 +4931,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8503259305067151544, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062722706186095009, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea56ac14f9a83d42b04a4c066450d65, type: 3}
