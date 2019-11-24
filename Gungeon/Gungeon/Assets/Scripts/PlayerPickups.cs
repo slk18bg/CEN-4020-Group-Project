@@ -46,7 +46,7 @@ public class PlayerPickups : MonoBehaviour
         else if (collision.CompareTag("Gem"))
         {
             collision.gameObject.SetActive(false);
-            PlayerStats.money += 10;
+            PlayerStats.money += 5;
             SetMoneyText();
             audioSource.PlayOneShot(PickupSound, 0.7F);
         }
