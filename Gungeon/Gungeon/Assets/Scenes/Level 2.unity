@@ -5657,7 +5657,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Shoot1Sound
       value: 
-      objectReference: {fileID: 8300000, guid: f354226f6cc7f4545a3779c9e83b8d06, type: 3}
+      objectReference: {fileID: 8300000, guid: abb3d0a23825e44d8a3fce4f81241c78, type: 3}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -6342,7 +6342,7 @@ PrefabInstance:
     - target: {fileID: 4083251554074462905, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4083251555928468339, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
@@ -6649,7 +6649,7 @@ PrefabInstance:
     - target: {fileID: 3556757852676475624, guid: 8036aca3b0144b44880896d1dfc6eda8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3556757852676475631, guid: 8036aca3b0144b44880896d1dfc6eda8,
         type: 3}
