@@ -9,6 +9,9 @@ TagManager:
   - Potion
   - Enemy
   - Bullet
+  - chest
+  - table
+  - SmallPotion
   layers:
   - Default
   - TransparentFX
