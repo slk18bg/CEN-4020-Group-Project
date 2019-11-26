@@ -11,6 +11,7 @@ TagManager:
   - Bullet
   - chest
   - table
+  - SmallPotion
   layers:
   - Default
   - TransparentFX
