@@ -8,12 +8,24 @@ public class ChangeLevel : MonoBehaviour
 { 
 
 public string level;
+public static int levelNumber = 0;
+public static int changeLevelMoney = 5;
+public static int currentLevelChangeMoney = 0;
 
-void OnTriggerEnter2D(Collider2D col) 
+// Start is called before the first frame update
+void Start()
 {
-    if (col.CompareTag("Player"))
+    ++levelNumber;
+    Debug.LogWarning("Current level number is " + levelNumber);
+    currentLevelChangeMoney = levelNumber * changeLevelMoney;
+    Debug.LogWarning("Current level number coin needed to advance is " + currentLevelChangeMoney);
+}
+
+    void OnTriggerEnter2D(Collider2D col) 
+{
+    if (col.CompareTag("Player") && (PlayerStats.money >= currentLevelChangeMoney))
     {
-      
+     
         Debug.Log("Entered trigger");
         SceneManager.LoadScene(level);
     }

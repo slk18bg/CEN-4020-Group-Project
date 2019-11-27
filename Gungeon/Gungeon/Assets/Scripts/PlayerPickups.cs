@@ -50,15 +50,16 @@ public class PlayerPickups : MonoBehaviour
             SetMoneyText();
             audioSource.PlayOneShot(PickupSound, 0.7F);
         }
-        else if (collision.CompareTag("Potion"))
+        else if (collision.CompareTag("Potion") || collision.CompareTag("SmallPotion"))
         {
             if (PlayerStats.health >= 0 && PlayerStats.health < PlayerStats.maxHealth)
             {
-                
-                GameObject.Find("Player").GetComponent<HearthSystem>().ChangeHealth(3);
+                if (collision.CompareTag("Potion"))
+                    GameObject.Find("Player").GetComponent<HearthSystem>().ChangeHealth(3);
+                else
+                    GameObject.Find("Player").GetComponent<HearthSystem>().ChangeHealth(1);
+
                 collision.gameObject.SetActive(false);
-                //++PlayerStats.health;
-                //SetHealthText();
                 audioSource.PlayOneShot(PickupSound, 0.7F);
 
             }

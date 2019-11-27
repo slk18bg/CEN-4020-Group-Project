@@ -15,15 +15,17 @@ public class Chest : MonoBehaviour
     private void Update()
     {
         Timer -= Time.deltaTime;
-        if (Timer <= 0)
+        if ((Timer <= 0) && (PlayerStats.money < ChangeLevel.currentLevelChangeMoney))
         {
             //GetComponent<Animator>().SetTrigger("ItemReady");
             chest.SetBool("ItemReady", true);
         }
+        else
+            chest.SetBool("ItemReady", false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag ("Player") && Timer <= 0)  //&& ((Timer - Time.deltaTime) <= 0) //&& !chestOpened)
+        if (collision.CompareTag ("Player") && (Timer <= 0) && (PlayerStats.money < ChangeLevel.currentLevelChangeMoney))  //&& ((Timer - Time.deltaTime) <= 0) //&& !chestOpened)
         {
             //chestOpened = true;
             //GetComponent<Animator>().SetBool("open",true);
