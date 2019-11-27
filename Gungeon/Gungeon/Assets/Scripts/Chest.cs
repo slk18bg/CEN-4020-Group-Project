@@ -5,13 +5,20 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     public Animator chest;
-    public GameObject[] objects;
+    public AudioClip chestOpen;
+    AudioSource audioSource;
     public Transform spawnPoint;
+    public GameObject[] objects;
     private GameObject item;
     private bool chestOpened;
     private float Timer = 10;
-    
+   
 
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         Timer -= Time.deltaTime;
@@ -27,6 +34,7 @@ public class Chest : MonoBehaviour
     {
         if (collision.CompareTag ("Player") && (Timer <= 0) && (PlayerStats.money < ChangeLevel.currentLevelChangeMoney))  //&& ((Timer - Time.deltaTime) <= 0) //&& !chestOpened)
         {
+            audioSource.PlayOneShot(chestOpen, 0.3F);
             //chestOpened = true;
             //GetComponent<Animator>().SetBool("open",true);
             chest.SetBool("open", true);
