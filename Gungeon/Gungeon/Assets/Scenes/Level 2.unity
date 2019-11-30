@@ -7100,6 +7100,12 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 1259476184}
+    - target: {fileID: 695819818743432001, guid: 91d3637c13841f4478bcc89eac856843,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 5950676340779171262, guid: e7029a684afb793448a6aefa78ddea97,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91d3637c13841f4478bcc89eac856843, type: 3}
 --- !u!4 &1070045979 stripped
