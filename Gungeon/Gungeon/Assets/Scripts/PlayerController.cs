@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-//using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public float bulletForce = 20f;
     public Animator weapon;
 
+    // audio
     public AudioClip Shoot1Sound;
     AudioSource audioSource;
 
@@ -105,17 +105,6 @@ public class PlayerController : MonoBehaviour
         }        
     }
 
-    /*
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("PickUp"))
-        {
-            collision.gameObject.SetActive(false);
-            count++;        
-        }
-    }
-    */
-
     void SetCrosshairToMouse()
     {
         if (movement != Vector2.zero)
@@ -130,7 +119,6 @@ public class PlayerController : MonoBehaviour
         Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
         bulletRB.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
-        //revolver.SetTrigger("Shoot");
         weapon.SetTrigger("Shoot");
         audioSource.PlayOneShot(Shoot1Sound, 0.7F);
     }
