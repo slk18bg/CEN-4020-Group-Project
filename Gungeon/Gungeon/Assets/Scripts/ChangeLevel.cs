@@ -9,7 +9,7 @@ public class ChangeLevel : MonoBehaviour
 
 public string level;
 public static int levelNumber = 0;
-public static int changeLevelMoney = 5;
+public static int changeLevelMoney = 10; // I'd put this at 100 for play
 public static int currentLevelChangeMoney = 0;
 
 // Start is called before the first frame update
