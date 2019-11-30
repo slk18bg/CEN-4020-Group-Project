@@ -25,7 +25,12 @@ void Start()
 {
     if (col.CompareTag("Player") && (PlayerStats.money >= currentLevelChangeMoney))
     {
-     
+        if (levelNumber == 3)
+        {
+                // pause and print some message
+                Debug.LogWarning("End of game");
+                return;
+        }
         Debug.Log("Entered trigger");
         SceneManager.LoadScene(level);
     }
