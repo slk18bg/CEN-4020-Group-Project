@@ -19,9 +19,7 @@ public class EnemyWeapon : MonoBehaviour
         fireRate = rateOfFire;
         nextFire = Time.time;
         DelayStartFire();
-    }
-
-    
+    }    
 
     void Update()
     {
