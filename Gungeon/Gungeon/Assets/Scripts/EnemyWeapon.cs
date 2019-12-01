@@ -35,9 +35,14 @@ public class EnemyWeapon : MonoBehaviour
     {
         if(Time.time > nextFire)
         {
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Shoot();
             nextFire = Time.time + fireRate;
             enemyWeapon.SetTrigger("WaterShoot");
         }
-    }    
+    }
+
+    void Shoot()
+    {
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+    }
 }
