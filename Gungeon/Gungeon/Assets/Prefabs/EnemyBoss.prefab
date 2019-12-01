@@ -74,7 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d0c534da5dec245a7e5b4bb776b46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPlayer: {fileID: 0}
+  targetPlayer: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
   updateRatePerSec: 2
   speed: 2
   pathCompleted: 0
@@ -94,6 +95,7 @@ MonoBehaviour:
   firePoint: {fileID: 4083251555735191598}
   bulletPrefab: {fileID: 5385312227501419485, guid: 7341aec93fc8a90469dcdfc42e90efc8,
     type: 3}
+  enemyWeapon: {fileID: 0}
   rateOfFire: 3
   fireDelay: 4
 --- !u!1 &4083251555014476900
@@ -316,8 +318,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  gemPrefab: {fileID: 0}
-  deathReaction: {fileID: 0}
+  rewardPrefab: {fileID: 2078073053661834648, guid: 5c76ccaf8def50b4980751be23002496,
+    type: 3}
+  deathReaction: {fileID: 6037377452834713595, guid: 72e5aac5b01eefb4eaeeb70978872436,
+    type: 3}
 --- !u!1 &4083251555735191599
 GameObject:
   m_ObjectHideFlags: 0

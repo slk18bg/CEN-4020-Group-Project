@@ -6,24 +6,33 @@ using UnityEngine.Audio;
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
-    public GameObject gemPrefab;
+    public GameObject rewardPrefab;
     public GameObject deathReaction;
-    
-
+    public bool deathEffect = true;
+        
     public void TakeDamage(int damage)
     {
         health -= damage;
 
         if (health <= 0)
         {
-            Die();
+            Die();                                   
         }
     }
 
     private void Die()
     {
-        //Instantiate(deathReaction, transform.position, Quaternion.identity);
+        if(deathEffect == true)
+        {
+            GameObject reaction = Instantiate(deathReaction, transform.position, Quaternion.identity);
+            Destroy(reaction, 2f);
+        }        
         Destroy(gameObject);
-        GameObject gemdrop = Instantiate(gemPrefab, transform.position, transform.rotation);
+        DropReward();
+    } 
+    
+    private void DropReward()
+    {        
+        Instantiate(rewardPrefab, transform.position, transform.rotation);
     }
 }
