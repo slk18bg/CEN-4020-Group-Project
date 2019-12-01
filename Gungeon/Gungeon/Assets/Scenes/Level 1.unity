@@ -6226,6 +6226,12 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8940814428952692264, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: deathReaction
+      value: 
+      objectReference: {fileID: 1024582088383063425, guid: ce8d2546d12c1fd4e81ba97ec67a2a59,
+        type: 3}
     - target: {fileID: 8503259305067151544, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_Enabled

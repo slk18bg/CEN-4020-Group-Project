@@ -289,7 +289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63714a445dee4d4d83e1faf5c0b9fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  deathReaction: {fileID: 1024582088383063425, guid: ce8d2546d12c1fd4e81ba97ec67a2a59,
+    type: 3}
 --- !u!114 &8940814428952692270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,8 +304,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyText: {fileID: 0}
-  healthText: {fileID: 0}
-  PickupSound: {fileID: 0}
+  PickupSound: {fileID: 8300000, guid: c5b0a3c2164eb4d4e86e85aa5a028416, type: 3}
+  coinSound: {fileID: 8300000, guid: 64e04b0f87535ce4baca66dc37c0a05a, type: 3}
+  potionSound: {fileID: 8300000, guid: a726988b272e63c45a4eef873efd1a3c, type: 3}
 --- !u!82 &8503259305067151544
 AudioSource:
   m_ObjectHideFlags: 0
