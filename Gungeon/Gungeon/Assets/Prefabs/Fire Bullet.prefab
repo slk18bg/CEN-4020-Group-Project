@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5385312227501419488}
   - component: {fileID: 50684045541910796}
   - component: {fileID: 114191086628053904}
+  - component: {fileID: 5983681609934699740}
   m_Layer: 0
   m_Name: Fire Bullet
   m_TagString: Bullet
@@ -68,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1134648051
-  m_SortingLayer: 4
+  m_SortingLayerID: 123848653
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 498401d5b02051e4a821da4ced265b5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -137,3 +138,22 @@ MonoBehaviour:
   bulletDirection: {x: 0, y: 0}
   hitEffect: {fileID: 3757226397960140656, guid: c0f803cf28288f14595fea65782443ff,
     type: 3}
+--- !u!95 &5983681609934699740
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385312227501419485}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dbf79fef19027e4b9fad754ebad33ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
