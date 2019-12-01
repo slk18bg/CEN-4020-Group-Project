@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     public int health = 100;
     public GameObject rewardPrefab;
     public GameObject deathReaction;
+    public bool deathEffect = true;
         
     public void TakeDamage(int damage)
     {
@@ -21,8 +22,11 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        GameObject reaction = Instantiate(deathReaction, transform.position, Quaternion.identity);
-        Destroy(reaction, 2f);
+        if(deathEffect == true)
+        {
+            GameObject reaction = Instantiate(deathReaction, transform.position, Quaternion.identity);
+            Destroy(reaction, 2f);
+        }        
         Destroy(gameObject);
         DropReward();
     } 

@@ -171,9 +171,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  gemPrefab: {fileID: 5404053498694771282, guid: fc544b9da8b1f8246ba2bfb6af81d7f6,
+  rewardPrefab: {fileID: 5404053498694771282, guid: fc544b9da8b1f8246ba2bfb6af81d7f6,
     type: 3}
   deathReaction: {fileID: 0}
+  deathEffect: 0
 --- !u!1 &695819818257009110
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +218,7 @@ GameObject:
   - component: {fileID: 695819818743432003}
   - component: {fileID: 695819818743432001}
   m_Layer: 0
-  m_Name: EnemyGhost3
+  m_Name: EnemyGhost
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,7 +279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d0c534da5dec245a7e5b4bb776b46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPlayer: {fileID: 0}
+  targetPlayer: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
+    type: 3}
   updateRatePerSec: 2
   speed: 2
   pathCompleted: 0
@@ -296,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 695819818257009111}
-  bulletPrefab: {fileID: 5385312227501419485, guid: 7341aec93fc8a90469dcdfc42e90efc8,
+  bulletPrefab: {fileID: 5950676340779171262, guid: e7029a684afb793448a6aefa78ddea97,
     type: 3}
   enemyWeapon: {fileID: 0}
   rateOfFire: 3
