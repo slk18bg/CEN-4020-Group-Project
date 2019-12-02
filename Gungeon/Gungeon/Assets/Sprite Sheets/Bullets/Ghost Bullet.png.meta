@@ -1,15 +1,19 @@
 fileFormatVersion: 2
-guid: 98ec6144ef0dc4b42a8820fc24715fee
+guid: 734f38348f0e6954c8bb56b48837de73
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Fire Bullet (1)_0
-    21300002: Fire Bullet (1)_1
-    21300004: Fire Bullet (1)_2
-    21300006: Fire Bullet (1)_3
-    21300008: Fire Bullet (1)_4
-    21300010: Fire Bullet (1)_5
-    21300012: Fire Bullet (1)_6
-    21300014: Fire Bullet (1)_7
+    21300000: Ghost Bullet_0
+    21300002: Ghost Bullet_1
+    21300004: Ghost Bullet_2
+    21300006: Ghost Bullet_3
+    21300008: Ghost Bullet_4
+    21300010: Ghost Bullet_5
+    21300012: Ghost Bullet_6
+    21300014: Ghost Bullet_7
+    21300016: Ghost Bullet_8
+    21300018: Ghost Bullet_9
+    21300020: Ghost Bullet_10
+    21300022: Ghost Bullet_11
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -39,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -92,161 +96,241 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire Bullet (1)_0
+      name: Ghost Bullet_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 292
-        width: 64
-        height: 64
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91803b3d0ff862446b32c69af2146563
+      spriteID: ecee48c0cedaf444b82282b548f28825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Bullet (1)_1
+      name: Ghost Bullet_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 292
-        width: 64
-        height: 64
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79642525f386fee4ba6692a1906f4e3d
+      spriteID: befa5dd3e8d4ec540b08c800fdf92523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Bullet (1)_2
+      name: Ghost Bullet_2
       rect:
         serializedVersion: 2
-        x: 280
-        y: 292
-        width: 64
-        height: 64
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 319b5e8c20e495e4196360b087b4afe3
+      spriteID: 571c40c7c82585946bdf198ee707c2f3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Bullet (1)_3
+      name: Ghost Bullet_3
       rect:
         serializedVersion: 2
-        x: 24
-        y: 164
-        width: 64
-        height: 64
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 328e9cbd6cd5587468f439efe9a08844
+      spriteID: 338b3a26e71383c44a7e423bf1c8e8b8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Bullet (1)_4
+      name: Ghost Bullet_4
       rect:
         serializedVersion: 2
-        x: 152
-        y: 164
-        width: 64
-        height: 64
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9862ce04ba37383448555fa1d8652241
+      spriteID: 32653c3e5dbc64a4bbecc83dcc871c68
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Bullet (1)_5
+      name: Ghost Bullet_5
       rect:
         serializedVersion: 2
-        x: 280
-        y: 164
-        width: 64
-        height: 64
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbc273f073fc93f43880c61d85becec4
+      spriteID: 3e793583c7f8367488163b487d8bab09
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Bullet (1)_6
+      name: Ghost Bullet_6
       rect:
         serializedVersion: 2
-        x: 24
-        y: 36
-        width: 64
-        height: 64
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abfc6a460ea2e1a4a8740da67b5125a2
+      spriteID: 0f678bf9dcb08a94eb190dbc118c907a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire Bullet (1)_7
+      name: Ghost Bullet_7
       rect:
         serializedVersion: 2
-        x: 152
-        y: 36
-        width: 64
-        height: 64
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f157577b02acbc24f8f2bb15635b6f8f
+      spriteID: 612ad70d3f3a89c4a8c9748519d8f3c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost Bullet_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b068bd424dc1a694b8c8dc23c6380747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost Bullet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfd369fd75a33a4791db939e80f4708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost Bullet_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa051030e97eb04185d46167df62540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ghost Bullet_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224f890b6e009e348a04d626caee0115
       vertices: []
       indices: 
       edges: []
@@ -254,7 +338,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 392589602732d0748b4c552abf992f43
+    spriteID: 0d000924c5103914d904ea240d4618b5
     vertices: []
     indices: 
     edges: []
