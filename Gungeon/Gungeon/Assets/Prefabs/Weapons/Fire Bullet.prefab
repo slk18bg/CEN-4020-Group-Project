@@ -96,9 +96,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08, y: 0.04}
+  m_Offset: {x: -0.08000001, y: 0.03714645}
   serializedVersion: 2
-  m_Radius: 0.34
+  m_Radius: 0.28577626
 --- !u!50 &50684045541910796
 Rigidbody2D:
   serializedVersion: 4
@@ -138,6 +138,7 @@ MonoBehaviour:
   bulletDirection: {x: 0, y: 0}
   hitEffect: {fileID: 707781355293505205, guid: 72be2e93b46826e43b4facc54e99aba5,
     type: 3}
+  hasEffect: 1
 --- !u!95 &5983681609934699740
 Animator:
   serializedVersion: 3
@@ -148,7 +149,7 @@ Animator:
   m_GameObject: {fileID: 5385312227501419485}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0dbf79fef19027e4b9fad754ebad33ec, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
