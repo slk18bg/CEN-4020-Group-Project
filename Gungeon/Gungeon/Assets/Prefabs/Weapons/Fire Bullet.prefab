@@ -136,7 +136,7 @@ MonoBehaviour:
   damage: 2
   bulletRB: {fileID: 50684045541910796}
   bulletDirection: {x: 0, y: 0}
-  hitEffect: {fileID: 3757226397960140656, guid: c0f803cf28288f14595fea65782443ff,
+  hitEffect: {fileID: 707781355293505205, guid: 72be2e93b46826e43b4facc54e99aba5,
     type: 3}
 --- !u!95 &5983681609934699740
 Animator:

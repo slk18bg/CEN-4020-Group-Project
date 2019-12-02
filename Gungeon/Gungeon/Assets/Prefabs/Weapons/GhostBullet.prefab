@@ -147,6 +147,7 @@ MonoBehaviour:
   bulletRB: {fileID: 2110293814502152247}
   bulletDirection: {x: 0, y: 0}
   hitEffect: {fileID: 0}
+  hasEffect: 0
 --- !u!95 &8037620420063999835
 Animator:
   serializedVersion: 3

@@ -9,8 +9,9 @@ public class EnemyBullet : MonoBehaviour
     public Rigidbody2D bulletRB;
     public Vector2 bulletDirection;
     Player target;
-
+    
     public GameObject hitEffect;
+    public bool hasEffect = true;
 
     void Start()
     {
@@ -26,17 +27,14 @@ public class EnemyBullet : MonoBehaviour
         Player player = hitInfo.GetComponent<Player>();
         if (player != null)
         {
+            if(hasEffect == true)
+            {
+                GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+                Destroy(effect, .1f);
+            }            
             player.TakeDamage(damage);
             Destroy(gameObject);            
         }
         
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 5f);
-        Destroy(gameObject);
-    }
-
 }
