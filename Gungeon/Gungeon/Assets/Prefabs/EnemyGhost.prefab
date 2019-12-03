@@ -173,8 +173,9 @@ MonoBehaviour:
   health: 100
   rewardPrefab: {fileID: 5404053498694771282, guid: fc544b9da8b1f8246ba2bfb6af81d7f6,
     type: 3}
-  deathReaction: {fileID: 0}
-  deathEffect: 0
+  deathReaction: {fileID: 4966022027879937579, guid: 4556a113c02eac0489a32ecf9d8d87a6,
+    type: 3}
+  deathEffect: 1
 --- !u!1 &695819818257009110
 GameObject:
   m_ObjectHideFlags: 0
