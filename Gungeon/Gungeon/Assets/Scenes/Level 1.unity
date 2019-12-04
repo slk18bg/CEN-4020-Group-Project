@@ -385,6 +385,11 @@ PrefabInstance:
       propertyPath: enemyWeapon
       value: 
       objectReference: {fileID: 315879659}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: rateOfFire
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
 --- !u!95 &315879659 stripped
@@ -1071,7 +1076,7 @@ PrefabInstance:
     - target: {fileID: 4083251554074462905, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4083251555928468339, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
@@ -5967,6 +5972,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvaswithPause
       objectReference: {fileID: 0}
+    - target: {fileID: 437209533103827061, guid: 9082fb13068f83642acb4ed80decd7de,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -95.50589
+      objectReference: {fileID: 0}
+    - target: {fileID: 437209534308528365, guid: 9082fb13068f83642acb4ed80decd7de,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1715352555}
     - target: {fileID: 437209534308528366, guid: 9082fb13068f83642acb4ed80decd7de,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6072,16 +6087,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 437209534308528365, guid: 9082fb13068f83642acb4ed80decd7de,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1715352555}
-    - target: {fileID: 437209533103827061, guid: 9082fb13068f83642acb4ed80decd7de,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -95.50589
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9082fb13068f83642acb4ed80decd7de, type: 3}
 --- !u!1001 &960333693665747224
@@ -6160,6 +6165,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: cam
@@ -6191,6 +6201,12 @@ PrefabInstance:
       propertyPath: playerAnimator
       value: 
       objectReference: {fileID: 2129696642414164737}
+    - target: {fileID: 8940814428952692264, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: deathReaction
+      value: 
+      objectReference: {fileID: 1024582088383063425, guid: ce8d2546d12c1fd4e81ba97ec67a2a59,
+        type: 3}
     - target: {fileID: 8940814428952692270, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: moneyText
@@ -6221,17 +6237,6 @@ PrefabInstance:
       propertyPath: potionSound
       value: 
       objectReference: {fileID: 8300000, guid: a726988b272e63c45a4eef873efd1a3c, type: 3}
-    - target: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940814428952692264, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: deathReaction
-      value: 
-      objectReference: {fileID: 1024582088383063425, guid: ce8d2546d12c1fd4e81ba97ec67a2a59,
-        type: 3}
     - target: {fileID: 8503259305067151544, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_Enabled
