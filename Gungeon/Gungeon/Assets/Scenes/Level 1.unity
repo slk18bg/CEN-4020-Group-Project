@@ -385,6 +385,11 @@ PrefabInstance:
       propertyPath: enemyWeapon
       value: 
       objectReference: {fileID: 315879659}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: rateOfFire
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
 --- !u!95 &315879659 stripped
@@ -1071,7 +1076,7 @@ PrefabInstance:
     - target: {fileID: 4083251554074462905, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4083251555928468339, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
@@ -2195,7 +2200,7 @@ GameObject:
   - component: {fileID: 1759275453}
   m_Layer: 9
   m_Name: Tilemap_base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5982,6 +5987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvaswithPause
       objectReference: {fileID: 0}
+    - target: {fileID: 437209533103827061, guid: 9082fb13068f83642acb4ed80decd7de,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -95.50589
+      objectReference: {fileID: 0}
     - target: {fileID: 437209534308528365, guid: 9082fb13068f83642acb4ed80decd7de,
         type: 3}
       propertyPath: m_Camera
@@ -6091,11 +6101,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437209534762793485, guid: 9082fb13068f83642acb4ed80decd7de,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -104
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9082fb13068f83642acb4ed80decd7de, type: 3}

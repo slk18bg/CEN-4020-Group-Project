@@ -270,6 +270,16 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 199346362}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: fireDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: rateOfFire
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
 --- !u!1 &169428303
@@ -2065,6 +2075,11 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 199346362}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: fireDelay
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
 --- !u!1 &1134622618
@@ -2780,12 +2795,12 @@ PrefabInstance:
     - target: {fileID: 4083251554074462904, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
       propertyPath: fireDelay
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4083251554074462904, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
       propertyPath: rateOfFire
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4083251555014476920, guid: 2cc61598e31e5804d89a7bbfbba06447,
         type: 3}
@@ -3118,7 +3133,7 @@ GameObject:
   - component: {fileID: 1561474672}
   m_Layer: 9
   m_Name: Tilemap_Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8373,6 +8388,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6979971540157754549, guid: b2be255a8d070d54ebc17c9cfe8bbffc,
         type: 3}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: rateOfFire
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
 --- !u!1001 &1945145865
@@ -8452,6 +8472,11 @@ PrefabInstance:
       propertyPath: targetPlayer
       value: 
       objectReference: {fileID: 199346362}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: fireDelay
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
 --- !u!114 &1969870658 stripped

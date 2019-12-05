@@ -135,6 +135,8 @@ MonoBehaviour:
   speed: 20
   damage: 10
   bulletRB: {fileID: 8864708147851801341}
+  hitEffect: {fileID: 707781355293505205, guid: 72be2e93b46826e43b4facc54e99aba5,
+    type: 3}
 --- !u!95 &8914812225743179401
 Animator:
   serializedVersion: 3

@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 179366127}
   m_Layer: 9
   m_Name: Tilemap_Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5940,22 +5940,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 695819818743432000, guid: 91d3637c13841f4478bcc89eac856843,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyGhost2
-      objectReference: {fileID: 0}
-    - target: {fileID: 695819818743432000, guid: 91d3637c13841f4478bcc89eac856843,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 695819818743432001, guid: 91d3637c13841f4478bcc89eac856843,
         type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 5950676340779171262, guid: e7029a684afb793448a6aefa78ddea97,
         type: 3}
+    - target: {fileID: 695819818743432001, guid: 91d3637c13841f4478bcc89eac856843,
+        type: 3}
+      propertyPath: fireDelay
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 695819818743432001, guid: 91d3637c13841f4478bcc89eac856843,
+        type: 3}
+      propertyPath: rateOfFire
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 695819818743432003, guid: 91d3637c13841f4478bcc89eac856843,
         type: 3}
       propertyPath: targetPlayer
@@ -7250,22 +7250,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 695819818743432000, guid: 91d3637c13841f4478bcc89eac856843,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyGhost1
-      objectReference: {fileID: 0}
-    - target: {fileID: 695819818743432000, guid: 91d3637c13841f4478bcc89eac856843,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 695819818743432001, guid: 91d3637c13841f4478bcc89eac856843,
         type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 5950676340779171262, guid: e7029a684afb793448a6aefa78ddea97,
         type: 3}
+    - target: {fileID: 695819818743432001, guid: 91d3637c13841f4478bcc89eac856843,
+        type: 3}
+      propertyPath: rateOfFire
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 695819818743432003, guid: 91d3637c13841f4478bcc89eac856843,
         type: 3}
       propertyPath: targetPlayer
@@ -7366,6 +7361,11 @@ PrefabInstance:
       propertyPath: enemyWeapon
       value: 
       objectReference: {fileID: 1117598462}
+    - target: {fileID: 300080895807441208, guid: 8036aca3b0144b44880896d1dfc6eda8,
+        type: 3}
+      propertyPath: rateOfFire
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8036aca3b0144b44880896d1dfc6eda8, type: 3}
 --- !u!95 &1117598462 stripped

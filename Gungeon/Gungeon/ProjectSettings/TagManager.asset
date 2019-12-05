@@ -12,6 +12,7 @@ TagManager:
   - chest
   - table
   - SmallPotion
+  - Wall
   layers:
   - Default
   - TransparentFX
