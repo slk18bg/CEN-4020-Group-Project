@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 179366127}
   m_Layer: 9
   m_Name: Tilemap_Base
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7531,6 +7531,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8940263754635187715, guid: cea56ac14f9a83d42b04a4c066450d65,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8942972119952403779, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7585,11 +7590,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8940263754635187715, guid: cea56ac14f9a83d42b04a4c066450d65,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8940814428952692267, guid: cea56ac14f9a83d42b04a4c066450d65,
         type: 3}

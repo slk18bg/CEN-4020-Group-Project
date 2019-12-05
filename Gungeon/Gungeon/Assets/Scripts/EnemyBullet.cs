@@ -35,6 +35,22 @@ public class EnemyBullet : MonoBehaviour
             player.TakeDamage(damage);
             Destroy(gameObject);            
         }
-        
+
+        if (hitInfo.gameObject.tag == "Wall")
+        {
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, .1f);
+            Destroy(gameObject);
+        }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, .1f);
+        }
     }
 }
