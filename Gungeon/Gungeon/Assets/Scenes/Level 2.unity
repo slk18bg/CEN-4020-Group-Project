@@ -240,6 +240,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3025464824814872558, guid: 9c1a7d29c11b789488ea30a17a184498,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830078236121577255, guid: 9c1a7d29c11b789488ea30a17a184498,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 51.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830078236121577255, guid: 9c1a7d29c11b789488ea30a17a184498,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1123.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830078236121577255, guid: 9c1a7d29c11b789488ea30a17a184498,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -729.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3006932781191389553, guid: 9c1a7d29c11b789488ea30a17a184498,
         type: 3}
       propertyPath: m_textInfo.characterCount
