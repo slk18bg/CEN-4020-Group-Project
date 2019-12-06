@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public GameObject deathReaction;
     public bool deathEffect = true;
 
+    // Game Win functionality written by Sheikh Khaled
     public GameObject GameWin;
     public static bool GamePaused = false;
 

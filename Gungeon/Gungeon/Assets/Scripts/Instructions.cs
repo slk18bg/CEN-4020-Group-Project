@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Sheikh KHaled
+
 public class Instructions : MonoBehaviour
 {
     // correspond to instruction menu sub-scenes
