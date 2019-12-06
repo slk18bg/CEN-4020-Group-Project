@@ -1324,9 +1324,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Use the arrow keys or the W A S D keys to control Bruce's movements. \nUse
-    the mouse to aim your gun and click to shoot.\nMake sure to dodge the enemy bullets!
-    If damage is taken, Bruce loses health. \nOnce he loses all his health, Bruce
-    dies and the game is over."
+    the mouse to aim your gun and click to shoot.\npRESS THE ESC KEY TO PAUSE THE
+    GAME.\nMake sure to dodge the enemy bullets! If damage is taken, Bruce loses health.
+    \nOnce he loses all his health, Bruce dies and the game is over."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1355,8 +1355,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1396,12 +1396,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 536890609}
-    characterCount: 261
+    characterCount: 298
     spriteCount: 0
-    spaceCount: 54
-    wordCount: 53
+    spaceCount: 62
+    wordCount: 61
     linkCount: 0
-    lineCount: 7
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -4496,7 +4496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1917817151
 RectTransform:
   m_ObjectHideFlags: 0
