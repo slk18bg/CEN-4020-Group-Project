@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+ * Script to add a graphics component to the AI script
+ * and serves to make sure the enemy rotates to face direction
+ * of player
+ * 
+ * by Wendy Slattery, Nov 2019
+ */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;

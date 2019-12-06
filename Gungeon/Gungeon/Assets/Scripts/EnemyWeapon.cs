@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Enemy weapon controls
+ * 
+ * by Wendy Slattery, Luca Labruna
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

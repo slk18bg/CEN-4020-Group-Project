@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Scripts associated with player damage taken by bullet hits
+ * Instantiates the death effect animation and removes player
+ * after health reaches zero.
+ * 
+ * by Wendy Slattery
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,7 +23,6 @@ public class Player : MonoBehaviour
             Die();
             GameOver();
         }
-
     }
 
     void Die ()

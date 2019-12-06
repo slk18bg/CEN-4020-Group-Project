@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Controls Player Bullets
+ * 
+ * by Wendy Slattery
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
