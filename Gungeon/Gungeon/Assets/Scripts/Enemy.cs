@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Scripts associated with enemy damage taken by bullet hits
+ * as well as associated death effects and reward drop after
+ * enemy health reaches zero.  
+ *
+ * by Wendy Slattery
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;

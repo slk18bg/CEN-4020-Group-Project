@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Aspects pertaining to player movements, animations, shoot mechanisms related to mouse pointer, 
+ * weapons triggers, and associated sounds are included here.
+ * 
+ * by Daniel Powley, Wendy Slattery, Luca Labruna, Steven Berkowitz
+ */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;

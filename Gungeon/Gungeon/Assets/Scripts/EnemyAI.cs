@@ -1,4 +1,14 @@
-﻿using Pathfinding;
+﻿/*
+ * Customized version of the AI script associated with A* algorithm
+ * which sets up waypoints, paths, calculates target position
+ * and creates shortest path to move enemy toward player, recalculating
+ * at each waypoint.  Much of this was garnished from two differing tutorials
+ * by Brackey's, but tweaked for this game's purpose.
+ * 
+ * by Wendy Slattery, Nov 2019
+ */
+
+using Pathfinding;
 using System.Collections;
 using UnityEngine;
 
