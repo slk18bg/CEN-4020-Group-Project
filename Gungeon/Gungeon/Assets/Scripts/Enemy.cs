@@ -10,6 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 
 
@@ -53,8 +54,10 @@ public class Enemy : MonoBehaviour
 
     public void GameWon()
     {
-        GameWin.SetActive(true); // enables pause menu
+        
+        GameWin.SetActive(true); // enables win pop up
         Time.timeScale = 0f; // freeze time
         GamePaused = true;
+        
     }
 }
